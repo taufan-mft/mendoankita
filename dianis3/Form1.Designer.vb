@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
-    Inherits System.Windows.Forms.Form
+    Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -22,16 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
+        '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(35, 98)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(97, 50)
+        Me.MetroButton1.TabIndex = 0
+        Me.MetroButton1.Text = "Pegawai"
+        Me.MetroButton1.UseSelectable = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 470)
+        Me.Controls.Add(Me.MetroButton1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Home"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class

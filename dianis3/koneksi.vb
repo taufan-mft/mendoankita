@@ -1,5 +1,9 @@
 ﻿
+'Ditulis oleh @taufan_mft, bagian dari TopanLabs.com
+'Ini adalah module tempat koneksi, sekaligus tempat fungsi yang sekiranya akan digunakan berulang kali
 Imports System.Data.OleDb
+Imports MetroFramework.Controls
+
 Module koneksi
     Public Conn As OleDbConnection
     Public DA As OleDbDataAdapter
@@ -17,7 +21,11 @@ Module koneksi
         End Try
     End Sub
 
-    Sub matiForm(ParamArray var() As TextBox)
+    'fungsi untuk mendisable (matikan) textbox, kita cukup masukan textboxnya sebagai argumen.
+    'Menggunakan paramarray jadi jumlah tak terbatas
+    'Jika tidak menggunakan MetroUI, ganti MetroTextBox menjadi TextBox
+
+    Sub matiForm(ParamArray var() As MetroTextBox)
         For i As Integer = 0 To UBound(var, 1)
             var(i).Enabled = False
         Next i
@@ -25,15 +33,49 @@ Module koneksi
 
     End Sub
 
-    Sub nyalainForm(ParamArray var() As TextBox)
+    'fungsi untuk nyalain textbox, kita cukup masukan textboxnya sebagai argumen.
+    'Menggunakan paramarray jadi jumlah tak terbatas
+    'Jika tidak menggunakan MetroUI, ganti MetroTextBox menjadi TextBox
+    Sub nyalainForm(ParamArray var() As MetroTextBox)
         For i As Integer = 0 To UBound(var, 1)
             var(i).Enabled = True
         Next
     End Sub
 
-    Sub clearForm(ParamArray var() As TextBox)
-        For i As Integer = 0 To UBound(var, i)
+    'fungsi untuk clear textbox, kita cukup masukan textboxnya sebagai argumen.
+    'Menggunakan paramarray jadi jumlah tak terbatas
+    'Jika tidak menggunakan MetroUI, ganti MetroTextBox menjadi TextBox
+    Sub clearForm(ParamArray var() As MetroTextBox)
+        For i As Integer = 0 To UBound(var, 1)
             var(i).Clear()
         Next
     End Sub
+
+    'fungsi untuk menampilkan data, kita cukup masukan query SQL serta DataGridView yang dituju sebagai argumen.
+
+    Sub tampilkanData(sequel As String, DGV As DataGridView)
+        DA = New OleDb.OleDbDataAdapter(sequel, Conn)
+        DS = New DataSet
+        DA.Fill(DS)
+
+        DGV.DataSource = DS.Tables(0)
+        DGV.ReadOnly = True
+    End Sub
+
+    'fungsi untuk cek apakah TextBox nya kosong. Menggunakan paramarray jadi jumlah argumen tak terbatas.
+    'ubah MetroTextBox menjadi TextBox jika tidak menggunakan MetroUI
+    'Akan menghasilkan True jika ada yang kosong, dan False jika terisi semua
+    Function checkEmpty(ParamArray var() As MetroTextBox) As Boolean
+        Dim nomor As Integer = 0
+        For i As Integer = 0 To UBound(var, 1)
+            If (var(i).Text = "") Then
+                nomor += 1
+            End If
+        Next
+        If (nomor > 0) Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
 End Module
