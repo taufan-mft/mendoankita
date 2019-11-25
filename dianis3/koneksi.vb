@@ -113,4 +113,31 @@ Module koneksi
         clearForm(var)
 
     End Sub
+
+    Sub updateData(namatabel As String, namaid As String, id As String, ParamArray var() As String)
+        Dim sql As String
+        sql = "update " + namatabel + " set "
+        For i As Integer = 0 To UBound(var, 1) Step 2
+            If i <> (UBound(var, 1) - 1) Then
+                sql = sql + var(i) + " ='" + var(i + 1) + "', "
+
+            Else
+                sql = sql + var(i) + " ='" + var(i + 1) + "'"
+            End If
+        Next
+        sql = sql + " where " + namaid + " = '" + id + "'"
+
+            CMD = New OleDbCommand(sql, Conn)
+            DM = CMD.ExecuteReader
+            MsgBox("Update berhasil")
+
+
+    End Sub
+
+    Sub showtoBox(row As Integer, DGV As DataGridView, ParamArray var() As MetroTextBox)
+        On Error Resume Next
+        For i As Integer = 0 To UBound(var, 1)
+            var(i).Text = DGV.Rows(row).Cells(i).Value
+        Next
+    End Sub
 End Module

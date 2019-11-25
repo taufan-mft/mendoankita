@@ -32,4 +32,18 @@
             End If
         End If
     End Sub
+
+    Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
+        showtoBox(e.RowIndex, DataGridView1, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+    End Sub
+
+    Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
+            MsgBox("Jangan kosong ra")
+        Else
+            updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
+                       "jeniskelamin", txtKelaminPeg.Text, "jabatan", txtJabatanPeg.Text)
+            tampilkanData("SELECT * FROM pegawai", DataGridView1)
+        End If
+    End Sub
 End Class
