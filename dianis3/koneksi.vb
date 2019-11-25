@@ -78,4 +78,23 @@ Module koneksi
             Return False
         End If
     End Function
+
+    'fungsi untuk cek duplikat d database
+    Function checkDuplicate(namatabel As String, namaid As String, idkonten As String)
+        Dim sequel As String
+        sequel = "select * from " + namatabel + " where " + namaid + " = '" + idkonten + "'"
+        CMD = New OleDb.OleDbCommand(sequel, Conn)
+
+        DM = CMD.ExecuteReader()
+        DM.Read()
+
+        If Not DM.HasRows Then
+            Return False
+        Else
+            Return True
+        End If
+
+    End Function
+
+    Sub simpanData()
 End Module

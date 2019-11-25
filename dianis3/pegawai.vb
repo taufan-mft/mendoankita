@@ -23,7 +23,10 @@
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
             MsgBox("Jangan kosong ra")
         Else
-            MsgBox("Weh ga kosong")
+            Dim winny As Boolean = checkDuplicate("pegawai", "ID_pegawai", txtIDPeg.Text)
+            If winny = True Then
+                MsgBox("weh duploikat")
+            End If
         End If
     End Sub
 End Class
