@@ -16,6 +16,7 @@
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+        btnSave.Enabled = True
 
     End Sub
 
@@ -35,6 +36,9 @@
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles DataGridView1.CellMouseClick
         showtoBox(e.RowIndex, DataGridView1, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+        btnSave.Enabled = False
+        txtIDPeg.Enabled = False
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
@@ -44,6 +48,8 @@
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
                        "jeniskelamin", txtKelaminPeg.Text, "jabatan", txtJabatanPeg.Text)
             tampilkanData("SELECT * FROM pegawai", DataGridView1)
+            clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+            matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         End If
     End Sub
 End Class
