@@ -26,6 +26,9 @@
             Dim winny As Boolean = checkDuplicate("pegawai", "ID_pegawai", txtIDPeg.Text)
             If winny = True Then
                 MsgBox("weh duploikat")
+            Else
+                simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+                tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
         End If
     End Sub

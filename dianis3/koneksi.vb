@@ -96,5 +96,21 @@ Module koneksi
 
     End Function
 
-    Sub simpanData()
+    Sub simpanData(namatabel As String, ParamArray var() As MetroTextBox)
+        Dim sql As String = "insert into " + namatabel + " values("
+        For i As Integer = 0 To UBound(var, 1)
+            If i <> UBound(var, 1) Then
+                sql = sql + "'" + var(i).Text + "',"
+            Else
+                sql = sql + "'" + var(i).Text + "')"
+            End If
+
+        Next
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        CMD.ExecuteNonQuery()
+        MsgBox("BERHAASIL")
+        matiForm(var)
+        clearForm(var)
+
+    End Sub
 End Module
