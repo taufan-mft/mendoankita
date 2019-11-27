@@ -150,4 +150,13 @@ Module koneksi
             End If
         Next
     End Sub
+    Sub showtoBox(row As Integer, DGV As DataGridView, ParamArray var() As MetroTextBox)
+        On Error Resume Next
+        For i As Integer = 0 To UBound(var, 1)
+
+
+            var(i).Text = DGV.Rows(row).Cells(i).Value
+
+        Next
+    End Sub
 End Module
