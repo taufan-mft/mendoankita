@@ -159,4 +159,12 @@ Module koneksi
 
         Next
     End Sub
+
+    Sub hapusData(namatabel As String, namaid As String, id As String)
+        Dim sql As String
+        sql = "DELETE FROM " + namatabel + " WHERE " + namaid + " ='" + id + "'"
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        DM = CMD.ExecuteReader
+        MsgBox("Data terhapus.")
+    End Sub
 End Module

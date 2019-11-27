@@ -85,6 +85,12 @@
     <Compile Include="film.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="foodAndBeverages.Designer.vb">
+      <DependentUpon>foodAndBeverages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="foodAndBeverages.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
   <ItemGroup>
     <EmbeddedResource Include="film.resx">
       <DependentUpon>film.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodAndBeverages.resx">
+      <DependentUpon>foodAndBeverages.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
