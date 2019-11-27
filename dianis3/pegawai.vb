@@ -17,6 +17,7 @@
         clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         btnSave.Enabled = True
+        btnInput.Enabled = True
 
     End Sub
 
@@ -38,6 +39,7 @@
         showtoBox(e.RowIndex, DataGridView1, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         btnSave.Enabled = False
+        btnInput.Enabled = False
         txtIDPeg.Enabled = False
     End Sub
 
