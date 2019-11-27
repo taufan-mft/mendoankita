@@ -41,7 +41,11 @@ Partial Class pegawai
         Me.btnCancel = New MetroFramework.Controls.MetroButton()
         Me.btnExit = New MetroFramework.Controls.MetroButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.txtBrowse = New MetroFramework.Controls.MetroButton()
+        Me.txtFoto = New MetroFramework.Controls.MetroTextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroLabel1
@@ -341,16 +345,68 @@ Partial Class pegawai
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(306, 55)
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 385)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(471, 266)
+        Me.DataGridView1.Size = New System.Drawing.Size(551, 161)
         Me.DataGridView1.TabIndex = 18
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(607, 50)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(229, 205)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 19
+        Me.PictureBox1.TabStop = False
+        '
+        'txtBrowse
+        '
+        Me.txtBrowse.Location = New System.Drawing.Point(761, 270)
+        Me.txtBrowse.Name = "txtBrowse"
+        Me.txtBrowse.Size = New System.Drawing.Size(75, 23)
+        Me.txtBrowse.TabIndex = 20
+        Me.txtBrowse.Text = "Browse"
+        Me.txtBrowse.UseSelectable = True
+        '
+        'txtFoto
+        '
+        '
+        '
+        '
+        Me.txtFoto.CustomButton.Image = Nothing
+        Me.txtFoto.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtFoto.CustomButton.Name = ""
+        Me.txtFoto.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtFoto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtFoto.CustomButton.TabIndex = 1
+        Me.txtFoto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtFoto.CustomButton.UseSelectable = True
+        Me.txtFoto.CustomButton.Visible = False
+        Me.txtFoto.Lines = New String() {"txt"}
+        Me.txtFoto.Location = New System.Drawing.Point(607, 270)
+        Me.txtFoto.MaxLength = 32767
+        Me.txtFoto.Name = "txtFoto"
+        Me.txtFoto.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtFoto.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtFoto.SelectedText = ""
+        Me.txtFoto.SelectionLength = 0
+        Me.txtFoto.SelectionStart = 0
+        Me.txtFoto.ShortcutsEnabled = True
+        Me.txtFoto.Size = New System.Drawing.Size(126, 23)
+        Me.txtFoto.TabIndex = 21
+        Me.txtFoto.Text = "txt"
+        Me.txtFoto.UseSelectable = True
+        Me.txtFoto.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtFoto.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.txtFoto)
+        Me.Controls.Add(Me.txtBrowse)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCancel)
@@ -373,6 +429,7 @@ Partial Class pegawai
         Me.Name = "pegawai"
         Me.Text = "pegawai"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -397,4 +454,7 @@ Partial Class pegawai
     Friend WithEvents btnCancel As MetroFramework.Controls.MetroButton
     Friend WithEvents btnExit As MetroFramework.Controls.MetroButton
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents txtBrowse As MetroFramework.Controls.MetroButton
+    Friend WithEvents txtFoto As MetroFramework.Controls.MetroTextBox
 End Class
