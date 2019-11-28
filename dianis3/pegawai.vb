@@ -83,4 +83,7 @@
 
     End Sub
 
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        hapusData("pegawai", "ID_Pegawai", txtIDPeg.Text)
+    End Sub
 End Class

@@ -12,4 +12,9 @@
         Dim dian As New film()
         dian.Show()
     End Sub
+
+    Private Sub btnFnb_Click(sender As Object, e As EventArgs) Handles btnFnb.Click
+        Dim dian As New foodAndBeverages()
+        dian.Show()
+    End Sub
 End Class

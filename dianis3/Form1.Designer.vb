@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
+        Me.btnFnb = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
         '
         'MetroButton1
@@ -44,11 +45,21 @@ Partial Class Form1
         Me.MetroButton2.Text = "Film"
         Me.MetroButton2.UseSelectable = True
         '
+        'btnFnb
+        '
+        Me.btnFnb.Location = New System.Drawing.Point(312, 98)
+        Me.btnFnb.Name = "btnFnb"
+        Me.btnFnb.Size = New System.Drawing.Size(97, 50)
+        Me.btnFnb.TabIndex = 2
+        Me.btnFnb.Text = "FnB"
+        Me.btnFnb.UseSelectable = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 470)
+        Me.Controls.Add(Me.btnFnb)
         Me.Controls.Add(Me.MetroButton2)
         Me.Controls.Add(Me.MetroButton1)
         Me.Name = "Form1"
@@ -59,4 +70,5 @@ Partial Class Form1
 
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
+    Friend WithEvents btnFnb As MetroFramework.Controls.MetroButton
 End Class
