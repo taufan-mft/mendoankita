@@ -44,6 +44,8 @@ Partial Class pegawai
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.txtBrowse = New MetroFramework.Controls.MetroButton()
         Me.txtFoto = New MetroFramework.Controls.MetroTextBox()
+        Me.MetroLabel7 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -352,7 +354,7 @@ Partial Class pegawai
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(607, 50)
+        Me.PictureBox1.Location = New System.Drawing.Point(605, 85)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(229, 205)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -361,7 +363,7 @@ Partial Class pegawai
         '
         'txtBrowse
         '
-        Me.txtBrowse.Location = New System.Drawing.Point(761, 270)
+        Me.txtBrowse.Location = New System.Drawing.Point(759, 305)
         Me.txtBrowse.Name = "txtBrowse"
         Me.txtBrowse.Size = New System.Drawing.Size(75, 23)
         Me.txtBrowse.TabIndex = 20
@@ -383,7 +385,7 @@ Partial Class pegawai
         Me.txtFoto.CustomButton.UseSelectable = True
         Me.txtFoto.CustomButton.Visible = False
         Me.txtFoto.Lines = New String() {"txt"}
-        Me.txtFoto.Location = New System.Drawing.Point(607, 270)
+        Me.txtFoto.Location = New System.Drawing.Point(605, 305)
         Me.txtFoto.MaxLength = 32767
         Me.txtFoto.Name = "txtFoto"
         Me.txtFoto.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -399,11 +401,33 @@ Partial Class pegawai
         Me.txtFoto.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtFoto.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
+        'MetroLabel7
+        '
+        Me.MetroLabel7.AutoSize = True
+        Me.MetroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel7.Location = New System.Drawing.Point(575, 21)
+        Me.MetroLabel7.Name = "MetroLabel7"
+        Me.MetroLabel7.Size = New System.Drawing.Size(51, 25)
+        Me.MetroLabel7.TabIndex = 22
+        Me.MetroLabel7.Text = "Halo,"
+        '
+        'MetroLabel8
+        '
+        Me.MetroLabel8.AutoSize = True
+        Me.MetroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel8.Location = New System.Drawing.Point(620, 21)
+        Me.MetroLabel8.Name = "MetroLabel8"
+        Me.MetroLabel8.Size = New System.Drawing.Size(51, 25)
+        Me.MetroLabel8.TabIndex = 23
+        Me.MetroLabel8.Text = "Halo,"
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.MetroLabel8)
+        Me.Controls.Add(Me.MetroLabel7)
         Me.Controls.Add(Me.txtFoto)
         Me.Controls.Add(Me.txtBrowse)
         Me.Controls.Add(Me.PictureBox1)
@@ -457,4 +481,6 @@ Partial Class pegawai
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtBrowse As MetroFramework.Controls.MetroButton
     Friend WithEvents txtFoto As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroLabel7 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
 End Class

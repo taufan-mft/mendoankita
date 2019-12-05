@@ -89,7 +89,7 @@ Partial Class login
         Me.txtPassword.Location = New System.Drawing.Point(152, 158)
         Me.txtPassword.MaxLength = 32767
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None
         Me.txtPassword.SelectedText = ""
         Me.txtPassword.SelectionLength = 0
@@ -144,7 +144,7 @@ Partial Class login
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("SF Pro Display", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "login"
         Me.Padding = New System.Windows.Forms.Padding(40, 115, 40, 38)

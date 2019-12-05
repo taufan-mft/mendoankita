@@ -146,7 +146,7 @@ Module koneksi
 
     End Sub
 
-    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, ParamArray var() As MetroTextBox)
+    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, ParamArray var() As MetroTextBox)
         On Error Resume Next
         For i As Integer = 0 To UBound(var, 1)
 
@@ -157,6 +157,7 @@ Module koneksi
                 pb.Image = New Bitmap(direck)
                 login.username = DGV.Rows(row).Cells(6).Value
                 login.password = DGV.Rows(row).Cells(7).Value
+                txtFoto.Text = DGV.Rows(row).Cells(8).Value
             Else
                 var(i).Text = DGV.Rows(row).Cells(i).Value
             End If

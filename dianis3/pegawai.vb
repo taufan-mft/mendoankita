@@ -7,7 +7,8 @@
         If (login.id <> "") Then
             Dim nomer As Integer
             nomer = Integer.Parse(login.id) - 1
-            showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+            showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+            MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
         End If
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
     End Sub
@@ -44,7 +45,7 @@
     End Sub
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
 
         btnSave.Enabled = False
@@ -57,7 +58,7 @@
             MsgBox("Jangan kosong ra")
         Else
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
-                       "jeniskelamin", txtKelaminPeg.Text, "jabatan", txtJabatanPeg.Text, "us", login.username, "pa", login.password, "foto", txtFoto.Text)
+                       "jeniskelamin", txtKelaminPeg.Text, "jabatan", txtJabatanPeg.Text, "foto", txtFoto.Text)
             tampilkanData("SELECT * FROM pegawai", DataGridView1)
             clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
             matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)

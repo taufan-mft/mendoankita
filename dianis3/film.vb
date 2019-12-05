@@ -2,11 +2,16 @@
     Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
         nyalainForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
         clearForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
+        btnInput.Enabled = False
+        btnSave.Enabled = True
     End Sub
 
     Private Sub film_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         matiForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
         tampilkanData("SELECT * FROM film", DataGridView1)
+        btnSave.Enabled = False
+        btnEdit.Enabled = False
+        btnDelete.Enabled = False
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -34,6 +39,15 @@
         End If
     End Sub
 
+    Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        showtoBox(e.RowIndex, DataGridView1, txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
+        nyalainForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
+        disableButton(btnSave, btnInput)
+        enableButton(btnEdit, btnDelete)
+        txtIDFilm.Enabled = False
+
+    End Sub
+
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If (checkEmpty(txtIDFilm) = True) Then
             MsgBox("Tidak ada data yang dipilih.")
@@ -42,5 +56,16 @@
             tampilkanData("SELECT * FROM film", DataGridView1)
 
         End If
+    End Sub
+
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        clearForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
+        matiForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
+        enableButton(btnInput)
+        disableButton(btnEdit, btnDelete, btnSave)
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Me.Close()
     End Sub
 End Class
