@@ -37,6 +37,8 @@ Partial Class film
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.txtIDFilm = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel7 = New MetroFramework.Controls.MetroLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -258,11 +260,33 @@ Partial Class film
         Me.MetroLabel1.TabIndex = 19
         Me.MetroLabel1.Text = "ID Film:"
         '
+        'MetroLabel8
+        '
+        Me.MetroLabel8.AutoSize = True
+        Me.MetroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel8.Location = New System.Drawing.Point(637, 26)
+        Me.MetroLabel8.Name = "MetroLabel8"
+        Me.MetroLabel8.Size = New System.Drawing.Size(51, 25)
+        Me.MetroLabel8.TabIndex = 39
+        Me.MetroLabel8.Text = "Halo,"
+        '
+        'MetroLabel7
+        '
+        Me.MetroLabel7.AutoSize = True
+        Me.MetroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall
+        Me.MetroLabel7.Location = New System.Drawing.Point(592, 26)
+        Me.MetroLabel7.Name = "MetroLabel7"
+        Me.MetroLabel7.Size = New System.Drawing.Size(51, 25)
+        Me.MetroLabel7.TabIndex = 38
+        Me.MetroLabel7.Text = "Halo,"
+        '
         'film
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MetroLabel8)
+        Me.Controls.Add(Me.MetroLabel7)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCancel)
@@ -301,4 +325,6 @@ Partial Class film
     Friend WithEvents MetroLabel2 As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtIDFilm As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel7 As MetroFramework.Controls.MetroLabel
 End Class

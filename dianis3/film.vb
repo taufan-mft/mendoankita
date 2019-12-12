@@ -9,6 +9,7 @@
     Private Sub film_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         matiForm(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm)
         tampilkanData("SELECT * FROM film", DataGridView1)
+        MetroLabel8.Text = pegawai.winnyName
         btnSave.Enabled = False
         btnEdit.Enabled = False
         btnDelete.Enabled = False

@@ -1,5 +1,6 @@
 ﻿Public Class pegawai
     Dim OpenFileDialog1 As New OpenFileDialog
+    Public Shared winnyName As String
     Private Sub pegawai_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksiDB()
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
@@ -9,6 +10,7 @@
             nomer = Integer.Parse(login.id) - 1
             showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
             MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
+            winnyName = MetroLabel8.Text
         End If
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
     End Sub
