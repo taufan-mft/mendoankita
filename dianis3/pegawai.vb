@@ -2,7 +2,7 @@
     Dim OpenFileDialog1 As New OpenFileDialog
     Public Shared winnyName As String
     Private Sub pegawai_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        koneksiDB()
+        'koneksiDB()
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
         tampilkanData("SELECT * FROM pegawai", DataGridView1)
         If (login.id <> "") Then

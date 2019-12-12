@@ -20,13 +20,13 @@
 
         If DM.HasRows = True Then
 
-            MsgBox("Dianis")
+            'MsgBox("Dianis")
             username = txtUserName.Text
             password = txtPassword.Text
 
             While DM.Read
 
-                MsgBox(DM.GetString(0))
+                'MsgBox(DM.GetString(0))
                 Label3.Text = DM.GetString(0)
             End While
 

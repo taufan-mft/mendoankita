@@ -126,6 +126,7 @@ Module koneksi
 
     End Sub
 
+    'fungsi untuk edit(update) data yang sudah tersimpan
     Sub updateData(namatabel As String, namaid As String, id As String, ParamArray var() As String)
         Dim sql As String
         sql = "update " + namatabel + " set "
@@ -146,6 +147,7 @@ Module koneksi
 
     End Sub
 
+    'fungsi untuk memunculkan data ke GridView serta foto ke picture box
     Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, ParamArray var() As MetroTextBox)
         On Error Resume Next
         For i As Integer = 0 To UBound(var, 1)
@@ -163,6 +165,8 @@ Module koneksi
             End If
         Next
     End Sub
+
+    'fungsi untuk memunculkan data ke GridView tapi tanpa picture box
     Sub showtoBox(row As Integer, DGV As DataGridView, ParamArray var() As MetroTextBox)
         On Error Resume Next
         For i As Integer = 0 To UBound(var, 1)
@@ -173,6 +177,7 @@ Module koneksi
         Next
     End Sub
 
+    'fungsi untuk hapus data, berdasarkan ID
     Sub hapusData(namatabel As String, namaid As String, id As String)
         Dim sql As String
         sql = "DELETE FROM " + namatabel + " WHERE " + namaid + " ='" + id + "'"
