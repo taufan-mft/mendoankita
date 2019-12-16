@@ -37,6 +37,7 @@ Partial Class showtime
         Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroLabel5 = New MetroFramework.Controls.MetroLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -218,11 +219,21 @@ Partial Class showtime
         Me.MetroComboBox2.TabIndex = 85
         Me.MetroComboBox2.UseSelectable = True
         '
+        'MetroLabel5
+        '
+        Me.MetroLabel5.AutoSize = True
+        Me.MetroLabel5.Location = New System.Drawing.Point(416, 255)
+        Me.MetroLabel5.Name = "MetroLabel5"
+        Me.MetroLabel5.Size = New System.Drawing.Size(79, 19)
+        Me.MetroLabel5.TabIndex = 86
+        Me.MetroLabel5.Text = "Jam tayang:"
+        '
         'showtime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1085, 549)
+        Me.Controls.Add(Me.MetroLabel5)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MetroTextBox1)
@@ -261,4 +272,5 @@ Partial Class showtime
     Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroLabel5 As MetroFramework.Controls.MetroLabel
 End Class

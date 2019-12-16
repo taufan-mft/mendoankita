@@ -1,6 +1,7 @@
 ﻿Public Class showtime
     Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
-
+        nyalainForm(txtIDShowtime, MetroTextBox1)
+        clearForm(txtIDShowtime, MetroTextBox1)
     End Sub
 
     Private Sub MetroDateTime1_ValueChanged(sender As Object, e As EventArgs)
@@ -48,5 +49,14 @@
             End While
         End If
 
+    End Sub
+
+    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+
+        MetroLabel5.Text = retrieveID(MetroComboBox1.SelectedItem.ToString, "film", "ID_film", "judul_film")
     End Sub
 End Class

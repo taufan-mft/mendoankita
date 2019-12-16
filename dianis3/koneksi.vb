@@ -185,4 +185,22 @@ Module koneksi
         DM = CMD.ExecuteReader
         MsgBox("Data terhapus.")
     End Sub
+
+    'fungsi untuk mencari ID suatu data dari suatu tabel untuk kemudian di masukan (referensikan) di tabel lain
+    Function retrieveID(value As String, tabel As String, namakolID As String, namakolValue As String)
+        Dim sql As String = "Select " + namakolID + " from " + tabel + " where " + namakolValue + " = '" + value + "'"
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        Dim hasil As String
+        DM = CMD.ExecuteReader()
+        If DM.HasRows = True Then
+            'MsgBox("Dianis")
+            While DM.Read
+                'MsgBox(DM.GetString(0))
+                ''Label3.Text = DM.GetString(0)
+                hasil = DM.GetString(0)
+
+            End While
+        End If
+        Return hasil
+    End Function
 End Module
