@@ -126,6 +126,23 @@ Module koneksi
 
     End Sub
 
+    Sub simpanData(namatabel As String, ParamArray var() As String)
+        Dim sql As String = "insert into " + namatabel + " values("
+        For i As Integer = 0 To UBound(var, 1)
+            If i <> UBound(var, 1) Then
+                sql = sql + "'" + var(i) + "',"
+            Else
+                sql = sql + "'" + var(i) + "')"
+            End If
+
+        Next
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        CMD.ExecuteNonQuery()
+        MsgBox("BERHAASIL")
+        'matiForm(var)
+        'clearForm(var)
+
+    End Sub
     'fungsi untuk edit(update) data yang sudah tersimpan
     Sub updateData(namatabel As String, namaid As String, id As String, ParamArray var() As String)
         Dim sql As String
@@ -190,7 +207,7 @@ Module koneksi
     Function retrieveID(value As String, tabel As String, namakolID As String, namakolValue As String)
         Dim sql As String = "Select " + namakolID + " from " + tabel + " where " + namakolValue + " = '" + value + "'"
         CMD = New OleDb.OleDbCommand(sql, Conn)
-        Dim hasil As String
+        Dim hasil As String = "raisa"
         DM = CMD.ExecuteReader()
         If DM.HasRows = True Then
             'MsgBox("Dianis")
