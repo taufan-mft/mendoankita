@@ -27,6 +27,8 @@ Partial Class Form1
         Me.btnFnb = New MetroFramework.Controls.MetroButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnShowTIme = New MetroFramework.Controls.MetroButton()
+        Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,11 +74,31 @@ Partial Class Form1
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
+        'btnShowTIme
+        '
+        Me.btnShowTIme.Location = New System.Drawing.Point(437, 98)
+        Me.btnShowTIme.Name = "btnShowTIme"
+        Me.btnShowTIme.Size = New System.Drawing.Size(97, 50)
+        Me.btnShowTIme.TabIndex = 4
+        Me.btnShowTIme.Text = "ShowTime"
+        Me.btnShowTIme.UseSelectable = True
+        '
+        'MetroButton3
+        '
+        Me.MetroButton3.Location = New System.Drawing.Point(562, 98)
+        Me.MetroButton3.Name = "MetroButton3"
+        Me.MetroButton3.Size = New System.Drawing.Size(97, 50)
+        Me.MetroButton3.TabIndex = 5
+        Me.MetroButton3.Text = "Auditorium"
+        Me.MetroButton3.UseSelectable = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 470)
+        Me.Controls.Add(Me.MetroButton3)
+        Me.Controls.Add(Me.btnShowTIme)
         Me.Controls.Add(Me.btnFnb)
         Me.Controls.Add(Me.MetroButton2)
         Me.Controls.Add(Me.MetroButton1)
@@ -96,4 +118,6 @@ Partial Class Form1
     Friend WithEvents btnFnb As MetroFramework.Controls.MetroButton
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnShowTIme As MetroFramework.Controls.MetroButton
+    Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
 End Class

@@ -29,21 +29,21 @@ Partial Class showtime
         Me.btnEdit = New MetroFramework.Controls.MetroButton()
         Me.btnSave = New MetroFramework.Controls.MetroButton()
         Me.btnInput = New MetroFramework.Controls.MetroButton()
-        Me.txtKelasAudi = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel3 = New MetroFramework.Controls.MetroLabel()
-        Me.txtJenisFnb = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel4 = New MetroFramework.Controls.MetroLabel()
-        Me.txtNamaAudi = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.txtIDShowtime = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroTextBox1 = New MetroFramework.Controls.MetroTextBox()
+        Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(313, 63)
+        Me.DataGridView1.Location = New System.Drawing.Point(572, 35)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(471, 266)
         Me.DataGridView1.TabIndex = 82
@@ -102,122 +102,32 @@ Partial Class showtime
         Me.btnInput.Text = "Input"
         Me.btnInput.UseSelectable = True
         '
-        'txtKelasAudi
-        '
-        '
-        '
-        '
-        Me.txtKelasAudi.CustomButton.Image = Nothing
-        Me.txtKelasAudi.CustomButton.Location = New System.Drawing.Point(104, 1)
-        Me.txtKelasAudi.CustomButton.Name = ""
-        Me.txtKelasAudi.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtKelasAudi.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtKelasAudi.CustomButton.TabIndex = 1
-        Me.txtKelasAudi.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtKelasAudi.CustomButton.UseSelectable = True
-        Me.txtKelasAudi.CustomButton.Visible = False
-        Me.txtKelasAudi.Lines = New String(-1) {}
-        Me.txtKelasAudi.Location = New System.Drawing.Point(150, 132)
-        Me.txtKelasAudi.MaxLength = 32767
-        Me.txtKelasAudi.Name = "txtKelasAudi"
-        Me.txtKelasAudi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtKelasAudi.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtKelasAudi.SelectedText = ""
-        Me.txtKelasAudi.SelectionLength = 0
-        Me.txtKelasAudi.SelectionStart = 0
-        Me.txtKelasAudi.ShortcutsEnabled = True
-        Me.txtKelasAudi.Size = New System.Drawing.Size(126, 23)
-        Me.txtKelasAudi.TabIndex = 75
-        Me.txtKelasAudi.UseSelectable = True
-        Me.txtKelasAudi.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtKelasAudi.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
         'MetroLabel3
         '
         Me.MetroLabel3.AutoSize = True
         Me.MetroLabel3.Location = New System.Drawing.Point(16, 136)
         Me.MetroLabel3.Name = "MetroLabel3"
-        Me.MetroLabel3.Size = New System.Drawing.Size(109, 19)
+        Me.MetroLabel3.Size = New System.Drawing.Size(78, 19)
         Me.MetroLabel3.TabIndex = 74
-        Me.MetroLabel3.Text = "Kelas auditorium:"
-        '
-        'txtJenisFnb
-        '
-        '
-        '
-        '
-        Me.txtJenisFnb.CustomButton.Image = Nothing
-        Me.txtJenisFnb.CustomButton.Location = New System.Drawing.Point(104, 1)
-        Me.txtJenisFnb.CustomButton.Name = ""
-        Me.txtJenisFnb.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtJenisFnb.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtJenisFnb.CustomButton.TabIndex = 1
-        Me.txtJenisFnb.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtJenisFnb.CustomButton.UseSelectable = True
-        Me.txtJenisFnb.CustomButton.Visible = False
-        Me.txtJenisFnb.Lines = New String(-1) {}
-        Me.txtJenisFnb.Location = New System.Drawing.Point(150, 161)
-        Me.txtJenisFnb.MaxLength = 32767
-        Me.txtJenisFnb.Name = "txtJenisFnb"
-        Me.txtJenisFnb.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtJenisFnb.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtJenisFnb.SelectedText = ""
-        Me.txtJenisFnb.SelectionLength = 0
-        Me.txtJenisFnb.SelectionStart = 0
-        Me.txtJenisFnb.ShortcutsEnabled = True
-        Me.txtJenisFnb.Size = New System.Drawing.Size(126, 23)
-        Me.txtJenisFnb.TabIndex = 73
-        Me.txtJenisFnb.UseSelectable = True
-        Me.txtJenisFnb.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtJenisFnb.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.MetroLabel3.Text = "Auditorium:"
         '
         'MetroLabel4
         '
         Me.MetroLabel4.AutoSize = True
         Me.MetroLabel4.Location = New System.Drawing.Point(16, 165)
         Me.MetroLabel4.Name = "MetroLabel4"
-        Me.MetroLabel4.Size = New System.Drawing.Size(39, 19)
+        Me.MetroLabel4.Size = New System.Drawing.Size(79, 19)
         Me.MetroLabel4.TabIndex = 72
-        Me.MetroLabel4.Text = "Jenis:"
-        '
-        'txtNamaAudi
-        '
-        '
-        '
-        '
-        Me.txtNamaAudi.CustomButton.Image = Nothing
-        Me.txtNamaAudi.CustomButton.Location = New System.Drawing.Point(104, 1)
-        Me.txtNamaAudi.CustomButton.Name = ""
-        Me.txtNamaAudi.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtNamaAudi.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtNamaAudi.CustomButton.TabIndex = 1
-        Me.txtNamaAudi.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtNamaAudi.CustomButton.UseSelectable = True
-        Me.txtNamaAudi.CustomButton.Visible = False
-        Me.txtNamaAudi.Lines = New String(-1) {}
-        Me.txtNamaAudi.Location = New System.Drawing.Point(150, 103)
-        Me.txtNamaAudi.MaxLength = 32767
-        Me.txtNamaAudi.Name = "txtNamaAudi"
-        Me.txtNamaAudi.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtNamaAudi.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtNamaAudi.SelectedText = ""
-        Me.txtNamaAudi.SelectionLength = 0
-        Me.txtNamaAudi.SelectionStart = 0
-        Me.txtNamaAudi.ShortcutsEnabled = True
-        Me.txtNamaAudi.Size = New System.Drawing.Size(126, 23)
-        Me.txtNamaAudi.TabIndex = 71
-        Me.txtNamaAudi.UseSelectable = True
-        Me.txtNamaAudi.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtNamaAudi.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        Me.MetroLabel4.Text = "Jam tayang:"
         '
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
         Me.MetroLabel2.Location = New System.Drawing.Point(16, 107)
         Me.MetroLabel2.Name = "MetroLabel2"
-        Me.MetroLabel2.Size = New System.Drawing.Size(116, 19)
+        Me.MetroLabel2.Size = New System.Drawing.Size(37, 19)
         Me.MetroLabel2.TabIndex = 70
-        Me.MetroLabel2.Text = "Nama auditorium:"
+        Me.MetroLabel2.Text = "Film:"
         '
         'txtIDShowtime
         '
@@ -243,7 +153,7 @@ Partial Class showtime
         Me.txtIDShowtime.SelectionLength = 0
         Me.txtIDShowtime.SelectionStart = 0
         Me.txtIDShowtime.ShortcutsEnabled = True
-        Me.txtIDShowtime.Size = New System.Drawing.Size(126, 23)
+        Me.txtIDShowtime.Size = New System.Drawing.Size(165, 23)
         Me.txtIDShowtime.TabIndex = 69
         Me.txtIDShowtime.UseSelectable = True
         Me.txtIDShowtime.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -258,11 +168,64 @@ Partial Class showtime
         Me.MetroLabel1.TabIndex = 68
         Me.MetroLabel1.Text = "ID Showtime:"
         '
+        'MetroTextBox1
+        '
+        '
+        '
+        '
+        Me.MetroTextBox1.CustomButton.Image = Nothing
+        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.MetroTextBox1.CustomButton.Name = ""
+        Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox1.CustomButton.TabIndex = 1
+        Me.MetroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox1.CustomButton.UseSelectable = True
+        Me.MetroTextBox1.CustomButton.Visible = False
+        Me.MetroTextBox1.Lines = New String(-1) {}
+        Me.MetroTextBox1.Location = New System.Drawing.Point(150, 167)
+        Me.MetroTextBox1.MaxLength = 32767
+        Me.MetroTextBox1.Name = "MetroTextBox1"
+        Me.MetroTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox1.SelectedText = ""
+        Me.MetroTextBox1.SelectionLength = 0
+        Me.MetroTextBox1.SelectionStart = 0
+        Me.MetroTextBox1.ShortcutsEnabled = True
+        Me.MetroTextBox1.Size = New System.Drawing.Size(165, 23)
+        Me.MetroTextBox1.TabIndex = 83
+        Me.MetroTextBox1.UseSelectable = True
+        Me.MetroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox1.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'MetroComboBox1
+        '
+        Me.MetroComboBox1.FormattingEnabled = True
+        Me.MetroComboBox1.ItemHeight = 23
+        Me.MetroComboBox1.Location = New System.Drawing.Point(150, 103)
+        Me.MetroComboBox1.Name = "MetroComboBox1"
+        Me.MetroComboBox1.Size = New System.Drawing.Size(165, 29)
+        Me.MetroComboBox1.TabIndex = 84
+        Me.MetroComboBox1.UseSelectable = True
+        '
+        'MetroComboBox2
+        '
+        Me.MetroComboBox2.FormattingEnabled = True
+        Me.MetroComboBox2.ItemHeight = 23
+        Me.MetroComboBox2.Location = New System.Drawing.Point(150, 136)
+        Me.MetroComboBox2.Name = "MetroComboBox2"
+        Me.MetroComboBox2.Size = New System.Drawing.Size(165, 29)
+        Me.MetroComboBox2.TabIndex = 85
+        Me.MetroComboBox2.UseSelectable = True
+        '
         'showtime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1085, 549)
+        Me.Controls.Add(Me.MetroComboBox2)
+        Me.Controls.Add(Me.MetroComboBox1)
+        Me.Controls.Add(Me.MetroTextBox1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnCancel)
@@ -270,11 +233,8 @@ Partial Class showtime
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.btnInput)
-        Me.Controls.Add(Me.txtKelasAudi)
         Me.Controls.Add(Me.MetroLabel3)
-        Me.Controls.Add(Me.txtJenisFnb)
         Me.Controls.Add(Me.MetroLabel4)
-        Me.Controls.Add(Me.txtNamaAudi)
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.txtIDShowtime)
         Me.Controls.Add(Me.MetroLabel1)
@@ -293,12 +253,12 @@ Partial Class showtime
     Friend WithEvents btnEdit As MetroFramework.Controls.MetroButton
     Friend WithEvents btnSave As MetroFramework.Controls.MetroButton
     Friend WithEvents btnInput As MetroFramework.Controls.MetroButton
-    Friend WithEvents txtKelasAudi As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel3 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents txtJenisFnb As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel4 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents txtNamaAudi As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel2 As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtIDShowtime As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroTextBox1 As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
 End Class
