@@ -29,6 +29,7 @@ Partial Class Form1
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnShowTIme = New MetroFramework.Controls.MetroButton()
         Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
+        Me.MetroButton4 = New MetroFramework.Controls.MetroButton()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -92,11 +93,21 @@ Partial Class Form1
         Me.MetroButton3.Text = "Auditorium"
         Me.MetroButton3.UseSelectable = True
         '
+        'MetroButton4
+        '
+        Me.MetroButton4.Location = New System.Drawing.Point(372, 210)
+        Me.MetroButton4.Name = "MetroButton4"
+        Me.MetroButton4.Size = New System.Drawing.Size(97, 50)
+        Me.MetroButton4.TabIndex = 6
+        Me.MetroButton4.Text = "Transaksi"
+        Me.MetroButton4.UseSelectable = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 470)
+        Me.Controls.Add(Me.MetroButton4)
         Me.Controls.Add(Me.MetroButton3)
         Me.Controls.Add(Me.btnShowTIme)
         Me.Controls.Add(Me.btnFnb)
@@ -120,4 +131,5 @@ Partial Class Form1
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnShowTIme As MetroFramework.Controls.MetroButton
     Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
+    Friend WithEvents MetroButton4 As MetroFramework.Controls.MetroButton
 End Class

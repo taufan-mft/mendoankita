@@ -136,7 +136,7 @@ Partial Class showtime
         '
         '
         Me.txtIDShowtime.CustomButton.Image = Nothing
-        Me.txtIDShowtime.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtIDShowtime.CustomButton.Location = New System.Drawing.Point(143, 1)
         Me.txtIDShowtime.CustomButton.Name = ""
         Me.txtIDShowtime.CustomButton.Size = New System.Drawing.Size(21, 21)
         Me.txtIDShowtime.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
@@ -175,7 +175,7 @@ Partial Class showtime
         '
         '
         Me.MetroTextBox1.CustomButton.Image = Nothing
-        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(143, 1)
         Me.MetroTextBox1.CustomButton.Name = ""
         Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(21, 21)
         Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue

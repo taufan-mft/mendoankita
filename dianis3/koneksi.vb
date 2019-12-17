@@ -194,6 +194,14 @@ Module koneksi
         Next
     End Sub
 
+    Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As String
+        ' by making Generator static, we preserve the same instance '
+        ' (i.e., do not create new instances with the same seed over and over) '
+        ' between calls '
+        Static Generator As System.Random = New System.Random()
+        Return Generator.Next(Min, Max).ToString
+    End Function
+
     'fungsi untuk hapus data, berdasarkan ID
     Sub hapusData(namatabel As String, namaid As String, id As String)
         Dim sql As String

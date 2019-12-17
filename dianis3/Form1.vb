@@ -27,4 +27,9 @@
         Dim raisa As New audi()
         raisa.Show()
     End Sub
+
+    Private Sub MetroButton4_Click(sender As Object, e As EventArgs) Handles MetroButton4.Click
+        Dim rai As New transaksi()
+        rai.Show()
+    End Sub
 End Class
