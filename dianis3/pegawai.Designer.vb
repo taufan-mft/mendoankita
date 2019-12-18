@@ -46,6 +46,10 @@ Partial Class pegawai
         Me.txtFoto = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel7 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
+        Me.txtUsername = New MetroFramework.Controls.MetroTextBox()
+        Me.MetroLabel9 = New MetroFramework.Controls.MetroLabel()
+        Me.txtPassword = New MetroFramework.Controls.MetroTextBox()
+        Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -421,11 +425,95 @@ Partial Class pegawai
         Me.MetroLabel8.TabIndex = 23
         Me.MetroLabel8.Text = "Halo,"
         '
+        'txtUsername
+        '
+        '
+        '
+        '
+        Me.txtUsername.CustomButton.Image = Nothing
+        Me.txtUsername.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtUsername.CustomButton.Name = ""
+        Me.txtUsername.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtUsername.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtUsername.CustomButton.TabIndex = 1
+        Me.txtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtUsername.CustomButton.UseSelectable = True
+        Me.txtUsername.CustomButton.Visible = False
+        Me.txtUsername.Lines = New String() {"MetroTextBox6"}
+        Me.txtUsername.Location = New System.Drawing.Point(103, 244)
+        Me.txtUsername.MaxLength = 32767
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtUsername.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtUsername.SelectedText = ""
+        Me.txtUsername.SelectionLength = 0
+        Me.txtUsername.SelectionStart = 0
+        Me.txtUsername.ShortcutsEnabled = True
+        Me.txtUsername.Size = New System.Drawing.Size(126, 23)
+        Me.txtUsername.TabIndex = 25
+        Me.txtUsername.Text = "MetroTextBox6"
+        Me.txtUsername.UseSelectable = True
+        Me.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtUsername.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'MetroLabel9
+        '
+        Me.MetroLabel9.AutoSize = True
+        Me.MetroLabel9.Location = New System.Drawing.Point(9, 244)
+        Me.MetroLabel9.Name = "MetroLabel9"
+        Me.MetroLabel9.Size = New System.Drawing.Size(71, 19)
+        Me.MetroLabel9.TabIndex = 24
+        Me.MetroLabel9.Text = "Username:"
+        '
+        'txtPassword
+        '
+        '
+        '
+        '
+        Me.txtPassword.CustomButton.Image = Nothing
+        Me.txtPassword.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtPassword.CustomButton.Name = ""
+        Me.txtPassword.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtPassword.CustomButton.TabIndex = 1
+        Me.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtPassword.CustomButton.UseSelectable = True
+        Me.txtPassword.CustomButton.Visible = False
+        Me.txtPassword.Lines = New String() {"Password:"}
+        Me.txtPassword.Location = New System.Drawing.Point(103, 273)
+        Me.txtPassword.MaxLength = 32767
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPassword.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtPassword.SelectedText = ""
+        Me.txtPassword.SelectionLength = 0
+        Me.txtPassword.SelectionStart = 0
+        Me.txtPassword.ShortcutsEnabled = True
+        Me.txtPassword.Size = New System.Drawing.Size(126, 23)
+        Me.txtPassword.TabIndex = 27
+        Me.txtPassword.Text = "Password:"
+        Me.txtPassword.UseSelectable = True
+        Me.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtPassword.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'MetroLabel10
+        '
+        Me.MetroLabel10.AutoSize = True
+        Me.MetroLabel10.Location = New System.Drawing.Point(9, 273)
+        Me.MetroLabel10.Name = "MetroLabel10"
+        Me.MetroLabel10.Size = New System.Drawing.Size(66, 19)
+        Me.MetroLabel10.TabIndex = 26
+        Me.MetroLabel10.Text = "Password:"
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.MetroLabel10)
+        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.MetroLabel9)
         Me.Controls.Add(Me.MetroLabel8)
         Me.Controls.Add(Me.MetroLabel7)
         Me.Controls.Add(Me.txtFoto)
@@ -483,4 +571,8 @@ Partial Class pegawai
     Friend WithEvents txtFoto As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel7 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents txtUsername As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroLabel9 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents txtPassword As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
 End Class

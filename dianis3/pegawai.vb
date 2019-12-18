@@ -40,7 +40,7 @@
             If winny = True Then
                 MsgBox("weh duploikat")
             Else
-                simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+                simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg, txtUsername, txtPassword, txtFoto)
                 tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
         End If
@@ -88,5 +88,6 @@
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         hapusData("pegawai", "ID_Pegawai", txtIDPeg.Text)
+        tampilkanData("SELECT * FROM pegawai", DataGridView1)
     End Sub
 End Class

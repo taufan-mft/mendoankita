@@ -46,7 +46,9 @@ Partial Class transaksi
         Me.txtKode = New MetroFramework.Controls.MetroLabel()
         Me.txtIDpeg = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel11 = New MetroFramework.Controls.MetroLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroLabel1
@@ -218,7 +220,7 @@ Partial Class transaksi
         'MetroLabel10
         '
         Me.MetroLabel10.AutoSize = True
-        Me.MetroLabel10.Location = New System.Drawing.Point(513, 128)
+        Me.MetroLabel10.Location = New System.Drawing.Point(508, 14)
         Me.MetroLabel10.Name = "MetroLabel10"
         Me.MetroLabel10.Size = New System.Drawing.Size(78, 19)
         Me.MetroLabel10.TabIndex = 15
@@ -245,7 +247,7 @@ Partial Class transaksi
         'txtIDpeg
         '
         Me.txtIDpeg.AutoSize = True
-        Me.txtIDpeg.Location = New System.Drawing.Point(247, 60)
+        Me.txtIDpeg.Location = New System.Drawing.Point(269, 60)
         Me.txtIDpeg.Name = "txtIDpeg"
         Me.txtIDpeg.Size = New System.Drawing.Size(29, 19)
         Me.txtIDpeg.TabIndex = 20
@@ -254,17 +256,27 @@ Partial Class transaksi
         'MetroLabel11
         '
         Me.MetroLabel11.AutoSize = True
-        Me.MetroLabel11.Location = New System.Drawing.Point(146, 60)
+        Me.MetroLabel11.Location = New System.Drawing.Point(168, 60)
         Me.MetroLabel11.Name = "MetroLabel11"
         Me.MetroLabel11.Size = New System.Drawing.Size(76, 19)
         Me.MetroLabel11.TabIndex = 19
         Me.MetroLabel11.Text = "ID Pegawai:"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(546, 75)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(222, 122)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 21
+        Me.PictureBox1.TabStop = False
         '
         'transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtIDpeg)
         Me.Controls.Add(Me.MetroLabel11)
         Me.Controls.Add(Me.txtKode)
@@ -289,6 +301,7 @@ Partial Class transaksi
         Me.Name = "transaksi"
         Me.Text = "transaksi"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -318,4 +331,5 @@ Partial Class transaksi
     Friend WithEvents txtKode As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtIDpeg As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel11 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -3,7 +3,10 @@
     Dim grandtotal As Integer = 0
     Dim banyakBaris As Integer = 0
     Dim winny As String
+    Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
+    Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
     Private Sub transaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim cek As String = "Select judul_film from film"
         CMD = New OleDb.OleDbCommand(cek, Conn)
         txtKode.Text = GetRandom(1, 25000).ToString
@@ -21,10 +24,27 @@
 
             End While
         End If
+        Try
+            PictureBox1.Image = QR_Generator.Encode(txtKode.Text)
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
 
     End Sub
 
+    Sub rai()
+        txtKode.Text = GetRandom(1, 25000).ToString
+        Try
+            PictureBox1.Image = QR_Generator.Encode(txtKode.Text)
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        End Try
+
+    End Sub
     Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox1.SelectedIndexChanged
         Dim winny As String
 
@@ -108,7 +128,7 @@
         MetroComboBox2.Enabled = False
         '' MetroLabel10.Text = DataGridView1.Rows.Count
         banyakBaris = DataGridView1.Rows.Count
-        MetroLabel10.Text = banyakBaris
+        '' MetroLabel10.Text = banyakBaris
         grandtotal = grandtotal + Int(MetroLabel6.Text)
         txtGrandtotal.Text = grandtotal.ToString
     End Sub
@@ -142,5 +162,6 @@
 
             simpanData("tiket", yog.ToString, winny, idSeat, Date.Now.ToString, txtKode.Text)
         Next
+
     End Sub
 End Class

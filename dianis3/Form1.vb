@@ -3,32 +3,32 @@
         koneksiDB()
     End Sub
 
-    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) 
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
         Dim dian As New pegawai()
         dian.Show()
     End Sub
 
-    Private Sub MetroButton2_Click(sender As Object, e As EventArgs) 
+    Private Sub MetroButton2_Click(sender As Object, e As EventArgs)
         Dim dian As New film()
         dian.Show()
     End Sub
 
-    Private Sub btnFnb_Click(sender As Object, e As EventArgs) 
+    Private Sub btnFnb_Click(sender As Object, e As EventArgs)
         Dim dian As New foodAndBeverages()
         dian.Show()
     End Sub
 
-    Private Sub btnShowTIme_Click(sender As Object, e As EventArgs) 
+    Private Sub btnShowTIme_Click(sender As Object, e As EventArgs)
         Dim showtime As New showtime()
         showtime.Show()
     End Sub
 
-    Private Sub MetroButton3_Click(sender As Object, e As EventArgs) 
+    Private Sub MetroButton3_Click(sender As Object, e As EventArgs)
         Dim raisa As New audi()
         raisa.Show()
     End Sub
 
-    Private Sub MetroButton4_Click(sender As Object, e As EventArgs) 
+    Private Sub MetroButton4_Click(sender As Object, e As EventArgs)
         Dim rai As New transaksi()
         rai.Show()
     End Sub
@@ -61,5 +61,9 @@
     Private Sub AuditoriumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AuditoriumToolStripMenuItem.Click
         audi.Show()
 
+    End Sub
+
+    Private Sub TransaksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem.Click
+        transaksi.Show()
     End Sub
 End Class

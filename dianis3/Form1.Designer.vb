@@ -23,30 +23,24 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PegawaiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowtimeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FnBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuditoriumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.InsertToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertToolStripMenuItem, Me.TransaksiToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(20, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(801, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
         '
         'InsertToolStripMenuItem
         '
@@ -85,6 +79,12 @@ Partial Class Form1
         Me.AuditoriumToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.AuditoriumToolStripMenuItem.Text = "Auditorium"
         '
+        'TransaksiToolStripMenuItem
+        '
+        Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
+        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.TransaksiToolStripMenuItem.Text = "Transaksi"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -101,11 +101,11 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InsertToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PegawaiToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ShowtimeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FnBToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AuditoriumToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
 End Class
