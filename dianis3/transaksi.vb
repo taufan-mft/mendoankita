@@ -107,7 +107,8 @@
         MetroComboBox1.Enabled = False
         MetroComboBox2.Enabled = False
         '' MetroLabel10.Text = DataGridView1.Rows.Count
-        banyakBaris = DataGridView1.Rows.Count - 1
+        banyakBaris = DataGridView1.Rows.Count
+        MetroLabel10.Text = banyakBaris
         grandtotal = grandtotal + Int(MetroLabel6.Text)
         txtGrandtotal.Text = grandtotal.ToString
     End Sub
@@ -117,15 +118,16 @@
         Dim kolom As String
         Dim idSeat As String
         simpanData("transaksi", txtKode.Text, txtIDpeg.Text, winny, banyakBaris.ToString, Date.Now.ToString, txtGrandtotal.Text)
-        For index2 As Integer = 1 To banyakBaris
+        For index2 As Integer = 0 To banyakBaris - 1
             baris = DataGridView1.Rows(index2).Cells(2).Value
             baris = baris.Substring(0, 1)
             kolom = DataGridView1.Rows(index2).Cells(2).Value
-            If (kolom.Length) = 3 Then
-                kolom = kolom.Substring(1, 2)
-            End If
             If (kolom.Length) = 2 Then
                 kolom = kolom.Substring(1, 1)
+            End If
+
+            If (kolom.Length) = 3 Then
+                kolom = kolom.Substring(1, 2)
             End If
 
             idSeat = retrieveID(baris, kolom, "seat", "ID_seat", "baris", "kolom")

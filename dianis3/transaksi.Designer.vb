@@ -180,6 +180,7 @@ Partial Class transaksi
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.judul, Me.showtime, Me.seat})
         Me.DataGridView1.Location = New System.Drawing.Point(10, 219)
@@ -217,7 +218,7 @@ Partial Class transaksi
         'MetroLabel10
         '
         Me.MetroLabel10.AutoSize = True
-        Me.MetroLabel10.Location = New System.Drawing.Point(518, 14)
+        Me.MetroLabel10.Location = New System.Drawing.Point(513, 128)
         Me.MetroLabel10.Name = "MetroLabel10"
         Me.MetroLabel10.Size = New System.Drawing.Size(78, 19)
         Me.MetroLabel10.TabIndex = 15
