@@ -60,7 +60,7 @@
             End While
         End If
         tampilkanData("select ID_showtime, judul_film, nama_audi, jam_tayang from (showtime INNER JOIN film ON showtime.ID_film=film.ID_film) INNER JOIN auditorium ON showtime.ID_auditorium = auditorium.ID_auditorium ", DataGridView1)
-        tampilkanData("select * from seat", DataGridView1)
+        ''tampilkanData("select * from seat", DataGridView1)
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
@@ -84,7 +84,7 @@
                             char2 = "C"
                     End Select
                     For index2 As Integer = 1 To 20
-                        simpanData("seat", GetRandom(1, 400), retrieveID(MetroComboBox2.SelectedItem.ToString, "auditorium", "ID_auditorium", "nama_audi"), "0", txtIDShowtime.Text, char2, index2)
+                        simpanData("seat", GetRandom(1, 6000), retrieveID(MetroComboBox2.SelectedItem.ToString, "auditorium", "ID_auditorium", "nama_audi"), "0", txtIDShowtime.Text, char2, index2)
                     Next
                 Next
 

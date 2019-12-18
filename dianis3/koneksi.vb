@@ -228,4 +228,20 @@ Module koneksi
         End If
         Return hasil
     End Function
+    Function retrieveID(value As String, value2 As String, tabel As String, namakolID As String, namakolValue As String, namakolVal2 As String)
+        Dim sql As String = "Select " + namakolID + " from " + tabel + " where " + namakolValue + " = '" + value + "' and " + namakolVal2 + " = '" + value2 + "'"
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        Dim hasil As String = "raisa"
+        DM = CMD.ExecuteReader()
+        If DM.HasRows = True Then
+            'MsgBox("Dianis")
+            While DM.Read
+                'MsgBox(DM.GetString(0))
+                ''Label3.Text = DM.GetString(0)
+                hasil = DM.GetString(0)
+
+            End While
+        End If
+        Return hasil
+    End Function
 End Module

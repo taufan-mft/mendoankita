@@ -50,6 +50,12 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>..\..\..\..\Downloads\27922_Barcode-DLL\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\..\..\..\Downloads\27923_QRCodeDLL\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -68,6 +74,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\..\..\Downloads\27924_WebCam_Capture\WebCam_Capture.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -135,6 +144,12 @@
     <Compile Include="pegawai.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="qrcode.Designer.vb">
+      <DependentUpon>qrcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="qrcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="showtime.Designer.vb">
       <DependentUpon>showtime.vb</DependentUpon>
     </Compile>
@@ -145,6 +160,12 @@
       <DependentUpon>transaksi.vb</DependentUpon>
     </Compile>
     <Compile Include="transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="webreader.Designer.vb">
+      <DependentUpon>webreader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="webreader.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -173,11 +194,17 @@
     <EmbeddedResource Include="pegawai.resx">
       <DependentUpon>pegawai.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="qrcode.resx">
+      <DependentUpon>qrcode.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="showtime.resx">
       <DependentUpon>showtime.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="transaksi.resx">
       <DependentUpon>transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webreader.resx">
+      <DependentUpon>webreader.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

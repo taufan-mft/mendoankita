@@ -29,6 +29,21 @@ Partial Class transaksi
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroLabel5 = New MetroFramework.Controls.MetroLabel()
+        Me.txtJudulFilm = New MetroFramework.Controls.MetroLabel()
+        Me.txtAuditorium = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel7 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel6 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.showtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.seat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.txtGrandtotal = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroLabel1
@@ -97,11 +112,139 @@ Partial Class transaksi
         Me.MetroComboBox3.TabIndex = 6
         Me.MetroComboBox3.UseSelectable = True
         '
+        'MetroLabel5
+        '
+        Me.MetroLabel5.AutoSize = True
+        Me.MetroLabel5.Location = New System.Drawing.Point(336, 14)
+        Me.MetroLabel5.Name = "MetroLabel5"
+        Me.MetroLabel5.Size = New System.Drawing.Size(68, 19)
+        Me.MetroLabel5.TabIndex = 7
+        Me.MetroLabel5.Text = "Judul film:"
+        '
+        'txtJudulFilm
+        '
+        Me.txtJudulFilm.AutoSize = True
+        Me.txtJudulFilm.Location = New System.Drawing.Point(410, 14)
+        Me.txtJudulFilm.Name = "txtJudulFilm"
+        Me.txtJudulFilm.Size = New System.Drawing.Size(68, 19)
+        Me.txtJudulFilm.TabIndex = 8
+        Me.txtJudulFilm.Text = "Judul film:"
+        '
+        'txtAuditorium
+        '
+        Me.txtAuditorium.AutoSize = True
+        Me.txtAuditorium.Location = New System.Drawing.Point(410, 44)
+        Me.txtAuditorium.Name = "txtAuditorium"
+        Me.txtAuditorium.Size = New System.Drawing.Size(68, 19)
+        Me.txtAuditorium.TabIndex = 10
+        Me.txtAuditorium.Text = "Judul film:"
+        '
+        'MetroLabel7
+        '
+        Me.MetroLabel7.AutoSize = True
+        Me.MetroLabel7.Location = New System.Drawing.Point(336, 44)
+        Me.MetroLabel7.Name = "MetroLabel7"
+        Me.MetroLabel7.Size = New System.Drawing.Size(78, 19)
+        Me.MetroLabel7.TabIndex = 9
+        Me.MetroLabel7.Text = "Auditorium:"
+        '
+        'MetroLabel6
+        '
+        Me.MetroLabel6.AutoSize = True
+        Me.MetroLabel6.Location = New System.Drawing.Point(410, 75)
+        Me.MetroLabel6.Name = "MetroLabel6"
+        Me.MetroLabel6.Size = New System.Drawing.Size(68, 19)
+        Me.MetroLabel6.TabIndex = 12
+        Me.MetroLabel6.Text = "Judul film:"
+        '
+        'MetroLabel8
+        '
+        Me.MetroLabel8.AutoSize = True
+        Me.MetroLabel8.Location = New System.Drawing.Point(336, 75)
+        Me.MetroLabel8.Name = "MetroLabel8"
+        Me.MetroLabel8.Size = New System.Drawing.Size(78, 19)
+        Me.MetroLabel8.TabIndex = 11
+        Me.MetroLabel8.Text = "Harga kursi:"
+        '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(318, 113)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(86, 34)
+        Me.MetroButton1.TabIndex = 13
+        Me.MetroButton1.Text = "Add"
+        Me.MetroButton1.UseSelectable = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.judul, Me.showtime, Me.seat})
+        Me.DataGridView1.Location = New System.Drawing.Point(10, 219)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(767, 208)
+        Me.DataGridView1.TabIndex = 14
+        '
+        'judul
+        '
+        Me.judul.HeaderText = "Judul Film"
+        Me.judul.Name = "judul"
+        Me.judul.ReadOnly = True
+        '
+        'showtime
+        '
+        Me.showtime.HeaderText = "Showtime"
+        Me.showtime.Name = "showtime"
+        Me.showtime.ReadOnly = True
+        '
+        'seat
+        '
+        Me.seat.HeaderText = "seat"
+        Me.seat.Name = "seat"
+        Me.seat.ReadOnly = True
+        '
+        'txtGrandtotal
+        '
+        Me.txtGrandtotal.AutoSize = True
+        Me.txtGrandtotal.Location = New System.Drawing.Point(592, 14)
+        Me.txtGrandtotal.Name = "txtGrandtotal"
+        Me.txtGrandtotal.Size = New System.Drawing.Size(78, 19)
+        Me.txtGrandtotal.TabIndex = 16
+        Me.txtGrandtotal.Text = "Grand total:"
+        '
+        'MetroLabel10
+        '
+        Me.MetroLabel10.AutoSize = True
+        Me.MetroLabel10.Location = New System.Drawing.Point(518, 14)
+        Me.MetroLabel10.Name = "MetroLabel10"
+        Me.MetroLabel10.Size = New System.Drawing.Size(78, 19)
+        Me.MetroLabel10.TabIndex = 15
+        Me.MetroLabel10.Text = "Grand total:"
+        '
+        'MetroButton2
+        '
+        Me.MetroButton2.Location = New System.Drawing.Point(318, 163)
+        Me.MetroButton2.Name = "MetroButton2"
+        Me.MetroButton2.Size = New System.Drawing.Size(86, 34)
+        Me.MetroButton2.TabIndex = 17
+        Me.MetroButton2.Text = "Save Trx"
+        Me.MetroButton2.UseSelectable = True
+        '
         'transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MetroButton2)
+        Me.Controls.Add(Me.txtGrandtotal)
+        Me.Controls.Add(Me.MetroLabel10)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.MetroButton1)
+        Me.Controls.Add(Me.MetroLabel6)
+        Me.Controls.Add(Me.MetroLabel8)
+        Me.Controls.Add(Me.txtAuditorium)
+        Me.Controls.Add(Me.MetroLabel7)
+        Me.Controls.Add(Me.txtJudulFilm)
+        Me.Controls.Add(Me.MetroLabel5)
         Me.Controls.Add(Me.MetroComboBox3)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
@@ -111,6 +254,7 @@ Partial Class transaksi
         Me.Controls.Add(Me.MetroLabel1)
         Me.Name = "transaksi"
         Me.Text = "transaksi"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -123,4 +267,18 @@ Partial Class transaksi
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox3 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroLabel5 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents txtJudulFilm As MetroFramework.Controls.MetroLabel
+    Friend WithEvents txtAuditorium As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel7 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel6 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents judul As DataGridViewTextBoxColumn
+    Friend WithEvents showtime As DataGridViewTextBoxColumn
+    Friend WithEvents seat As DataGridViewTextBoxColumn
+    Friend WithEvents txtGrandtotal As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
 End Class
