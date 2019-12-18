@@ -1,11 +1,13 @@
 ﻿Public Class transaksi
     Dim idFilm As String
     Dim grandtotal As Integer = 0
+    Dim banyakBaris As Integer = 0
+    Dim winny As String
     Private Sub transaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim cek As String = "Select judul_film from film"
         CMD = New OleDb.OleDbCommand(cek, Conn)
-
-
+        txtKode.Text = GetRandom(1, 25000).ToString
+        txtIDpeg.Text = login.id
         DM = CMD.ExecuteReader()
 
         If DM.HasRows = True Then
@@ -46,7 +48,7 @@
     End Sub
 
     Private Sub MetroComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox2.SelectedIndexChanged
-        Dim winny As String
+
         Dim ra23i As String
 
         winny = MetroComboBox2.SelectedItem.ToString
@@ -104,7 +106,39 @@
         MetroComboBox3.Update()
         MetroComboBox1.Enabled = False
         MetroComboBox2.Enabled = False
+        '' MetroLabel10.Text = DataGridView1.Rows.Count
+        banyakBaris = DataGridView1.Rows.Count - 1
         grandtotal = grandtotal + Int(MetroLabel6.Text)
         txtGrandtotal.Text = grandtotal.ToString
+    End Sub
+
+    Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
+        Dim baris As String
+        Dim kolom As String
+        Dim idSeat As String
+        simpanData("transaksi", txtKode.Text, txtIDpeg.Text, winny, banyakBaris.ToString, Date.Now.ToString, txtGrandtotal.Text)
+        For index2 As Integer = 1 To banyakBaris
+            baris = DataGridView1.Rows(index2).Cells(2).Value
+            baris = baris.Substring(0, 1)
+            kolom = DataGridView1.Rows(index2).Cells(2).Value
+            If (kolom.Length) = 3 Then
+                kolom = kolom.Substring(1, 2)
+            End If
+            If (kolom.Length) = 2 Then
+                kolom = kolom.Substring(1, 1)
+            End If
+
+            idSeat = retrieveID(baris, kolom, "seat", "ID_seat", "baris", "kolom")
+            updateData("seat", "ID_seat", idSeat, "is_occupied", "1")
+            Dim yog As Integer
+            While True
+                yog = GetRandom(1, 6000)
+                If (checkDuplicate("tiket", "ID_tiket", yog.ToString) = False) Then
+                    Exit While
+                End If
+            End While
+
+            simpanData("tiket", yog.ToString, winny, idSeat, Date.Now.ToString, txtKode.Text)
+        Next
     End Sub
 End Class

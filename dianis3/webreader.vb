@@ -6,7 +6,7 @@ Public Class webreader
 
     Private Sub StartWebCam()
         Try
-            StopWebcam()
+            ''StopWebcam()
             Mywebcam = New WebCamCapture
             Mywebcam.Start(0)
             Mywebcam.Start(0)

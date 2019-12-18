@@ -43,6 +43,9 @@ Partial Class transaksi
         Me.txtGrandtotal = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
+        Me.txtKode = New MetroFramework.Controls.MetroLabel()
+        Me.txtIDpeg = New MetroFramework.Controls.MetroLabel()
+        Me.MetroLabel11 = New MetroFramework.Controls.MetroLabel()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -229,11 +232,41 @@ Partial Class transaksi
         Me.MetroButton2.Text = "Save Trx"
         Me.MetroButton2.UseSelectable = True
         '
+        'txtKode
+        '
+        Me.txtKode.AutoSize = True
+        Me.txtKode.Location = New System.Drawing.Point(111, 60)
+        Me.txtKode.Name = "txtKode"
+        Me.txtKode.Size = New System.Drawing.Size(29, 19)
+        Me.txtKode.TabIndex = 18
+        Me.txtKode.Text = "rab"
+        '
+        'txtIDpeg
+        '
+        Me.txtIDpeg.AutoSize = True
+        Me.txtIDpeg.Location = New System.Drawing.Point(247, 60)
+        Me.txtIDpeg.Name = "txtIDpeg"
+        Me.txtIDpeg.Size = New System.Drawing.Size(29, 19)
+        Me.txtIDpeg.TabIndex = 20
+        Me.txtIDpeg.Text = "rab"
+        '
+        'MetroLabel11
+        '
+        Me.MetroLabel11.AutoSize = True
+        Me.MetroLabel11.Location = New System.Drawing.Point(146, 60)
+        Me.MetroLabel11.Name = "MetroLabel11"
+        Me.MetroLabel11.Size = New System.Drawing.Size(76, 19)
+        Me.MetroLabel11.TabIndex = 19
+        Me.MetroLabel11.Text = "ID Pegawai:"
+        '
         'transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.txtIDpeg)
+        Me.Controls.Add(Me.MetroLabel11)
+        Me.Controls.Add(Me.txtKode)
         Me.Controls.Add(Me.MetroButton2)
         Me.Controls.Add(Me.txtGrandtotal)
         Me.Controls.Add(Me.MetroLabel10)
@@ -281,4 +314,7 @@ Partial Class transaksi
     Friend WithEvents txtGrandtotal As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
+    Friend WithEvents txtKode As MetroFramework.Controls.MetroLabel
+    Friend WithEvents txtIDpeg As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroLabel11 As MetroFramework.Controls.MetroLabel
 End Class

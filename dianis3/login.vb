@@ -1,5 +1,5 @@
 ﻿Public Class login
-    Public username, password, id As String
+    Public Shared username, password, id As String
 
     Dim winny As String
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click

@@ -84,7 +84,14 @@
                             char2 = "C"
                     End Select
                     For index2 As Integer = 1 To 20
-                        simpanData("seat", GetRandom(1, 6000), retrieveID(MetroComboBox2.SelectedItem.ToString, "auditorium", "ID_auditorium", "nama_audi"), "0", txtIDShowtime.Text, char2, index2)
+                        Dim yog As Integer
+                        While True
+                            yog = GetRandom(1, 6000)
+                            If (checkDuplicate("seat", "ID_seat", yog.ToString) = False) Then
+                                Exit While
+                            End If
+                        End While
+                        simpanData("seat", yog, retrieveID(MetroComboBox2.SelectedItem.ToString, "auditorium", "ID_auditorium", "nama_audi"), "0", txtIDShowtime.Text, char2, index2)
                     Next
                 Next
 
