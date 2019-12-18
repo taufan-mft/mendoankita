@@ -22,47 +22,20 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
-        Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
-        Me.btnFnb = New MetroFramework.Controls.MetroButton()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnShowTIme = New MetroFramework.Controls.MetroButton()
-        Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
-        Me.MetroButton4 = New MetroFramework.Controls.MetroButton()
+        Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PegawaiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FilmToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShowtimeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FnBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AuditoriumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'MetroButton1
-        '
-        Me.MetroButton1.Location = New System.Drawing.Point(35, 98)
-        Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(97, 50)
-        Me.MetroButton1.TabIndex = 0
-        Me.MetroButton1.Text = "Pegawai"
-        Me.MetroButton1.UseSelectable = True
-        '
-        'MetroButton2
-        '
-        Me.MetroButton2.Location = New System.Drawing.Point(171, 98)
-        Me.MetroButton2.Name = "MetroButton2"
-        Me.MetroButton2.Size = New System.Drawing.Size(97, 50)
-        Me.MetroButton2.TabIndex = 1
-        Me.MetroButton2.Text = "Film"
-        Me.MetroButton2.UseSelectable = True
-        '
-        'btnFnb
-        '
-        Me.btnFnb.Location = New System.Drawing.Point(312, 98)
-        Me.btnFnb.Name = "btnFnb"
-        Me.btnFnb.Size = New System.Drawing.Size(97, 50)
-        Me.btnFnb.TabIndex = 2
-        Me.btnFnb.Text = "FnB"
-        Me.btnFnb.UseSelectable = True
-        '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.InsertToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(20, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(801, 24)
@@ -75,44 +48,48 @@ Partial Class Form1
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'btnShowTIme
+        'InsertToolStripMenuItem
         '
-        Me.btnShowTIme.Location = New System.Drawing.Point(437, 98)
-        Me.btnShowTIme.Name = "btnShowTIme"
-        Me.btnShowTIme.Size = New System.Drawing.Size(97, 50)
-        Me.btnShowTIme.TabIndex = 4
-        Me.btnShowTIme.Text = "ShowTime"
-        Me.btnShowTIme.UseSelectable = True
+        Me.InsertToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PegawaiToolStripMenuItem, Me.FilmToolStripMenuItem, Me.ShowtimeToolStripMenuItem, Me.FnBToolStripMenuItem, Me.AuditoriumToolStripMenuItem})
+        Me.InsertToolStripMenuItem.Name = "InsertToolStripMenuItem"
+        Me.InsertToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.InsertToolStripMenuItem.Text = "Insert"
         '
-        'MetroButton3
+        'PegawaiToolStripMenuItem
         '
-        Me.MetroButton3.Location = New System.Drawing.Point(562, 98)
-        Me.MetroButton3.Name = "MetroButton3"
-        Me.MetroButton3.Size = New System.Drawing.Size(97, 50)
-        Me.MetroButton3.TabIndex = 5
-        Me.MetroButton3.Text = "Auditorium"
-        Me.MetroButton3.UseSelectable = True
+        Me.PegawaiToolStripMenuItem.Name = "PegawaiToolStripMenuItem"
+        Me.PegawaiToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PegawaiToolStripMenuItem.Text = "Pegawai"
         '
-        'MetroButton4
+        'FilmToolStripMenuItem
         '
-        Me.MetroButton4.Location = New System.Drawing.Point(372, 210)
-        Me.MetroButton4.Name = "MetroButton4"
-        Me.MetroButton4.Size = New System.Drawing.Size(97, 50)
-        Me.MetroButton4.TabIndex = 6
-        Me.MetroButton4.Text = "Transaksi"
-        Me.MetroButton4.UseSelectable = True
+        Me.FilmToolStripMenuItem.Name = "FilmToolStripMenuItem"
+        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FilmToolStripMenuItem.Text = "Film"
+        '
+        'ShowtimeToolStripMenuItem
+        '
+        Me.ShowtimeToolStripMenuItem.Name = "ShowtimeToolStripMenuItem"
+        Me.ShowtimeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowtimeToolStripMenuItem.Text = "Showtime"
+        '
+        'FnBToolStripMenuItem
+        '
+        Me.FnBToolStripMenuItem.Name = "FnBToolStripMenuItem"
+        Me.FnBToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FnBToolStripMenuItem.Text = "FnB"
+        '
+        'AuditoriumToolStripMenuItem
+        '
+        Me.AuditoriumToolStripMenuItem.Name = "AuditoriumToolStripMenuItem"
+        Me.AuditoriumToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AuditoriumToolStripMenuItem.Text = "Auditorium"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(841, 470)
-        Me.Controls.Add(Me.MetroButton4)
-        Me.Controls.Add(Me.MetroButton3)
-        Me.Controls.Add(Me.btnShowTIme)
-        Me.Controls.Add(Me.btnFnb)
-        Me.Controls.Add(Me.MetroButton2)
-        Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
@@ -123,13 +100,12 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
-    Friend WithEvents btnFnb As MetroFramework.Controls.MetroButton
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents btnShowTIme As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroButton4 As MetroFramework.Controls.MetroButton
+    Friend WithEvents InsertToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PegawaiToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FilmToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ShowtimeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FnBToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AuditoriumToolStripMenuItem As ToolStripMenuItem
 End Class

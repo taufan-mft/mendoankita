@@ -33,10 +33,10 @@
             id = Label3.Text
 
 
-            Dim box As New pegawai()
+
             Dim box2 As New Form1()
             box2.Show()
-            box.Show()
+
 
 
         Else
