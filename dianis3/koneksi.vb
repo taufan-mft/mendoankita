@@ -183,6 +183,27 @@ Module koneksi
         Next
     End Sub
 
+    'fungsi untuk menampilkan disertai combobox di pegawai
+    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, txtKelamin As MetroComboBox, ParamArray var() As MetroTextBox)
+        On Error Resume Next
+        For i As Integer = 0 To UBound(var, 1)
+
+            If (i = (UBound(var, 1))) Then
+                Dim direck As String = DGV.Rows(row).Cells(i + 3).Value
+                var(i).Text = DGV.Rows(row).Cells(i).Value
+                'debug.Text = direck
+                pb.Image = New Bitmap(direck)
+                login.username = DGV.Rows(row).Cells(6).Value
+                login.password = DGV.Rows(row).Cells(7).Value
+                txtFoto.Text = DGV.Rows(row).Cells(8).Value
+            Else
+                var(i).Text = DGV.Rows(row).Cells(i).Value
+                txtKelamin.SelectedItem = DGV.Rows(row).Cells(4).Value
+
+            End If
+        Next
+    End Sub
+
     'fungsi untuk memunculkan data ke GridView tapi tanpa picture box
     Sub showtoBox(row As Integer, DGV As DataGridView, ParamArray var() As MetroTextBox)
         On Error Resume Next

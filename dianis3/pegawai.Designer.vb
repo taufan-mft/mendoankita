@@ -53,6 +53,7 @@ Partial Class pegawai
         Me.txtCariDGV = New MetroFramework.Controls.MetroTextBox()
         Me.btnCariDGV = New MetroFramework.Controls.MetroButton()
         Me.txtKelaminPeg = New MetroFramework.Controls.MetroTextBox()
+        Me.KelaminCombo = New MetroFramework.Controls.MetroComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -537,7 +538,7 @@ Partial Class pegawai
         Me.txtKelaminPeg.CustomButton.UseSelectable = True
         Me.txtKelaminPeg.CustomButton.Visible = False
         Me.txtKelaminPeg.Lines = New String() {"MetroTextBox5"}
-        Me.txtKelaminPeg.Location = New System.Drawing.Point(103, 186)
+        Me.txtKelaminPeg.Location = New System.Drawing.Point(633, 490)
         Me.txtKelaminPeg.MaxLength = 32767
         Me.txtKelaminPeg.Name = "txtKelaminPeg"
         Me.txtKelaminPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -553,11 +554,23 @@ Partial Class pegawai
         Me.txtKelaminPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtKelaminPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
+        'KelaminCombo
+        '
+        Me.KelaminCombo.FormattingEnabled = True
+        Me.KelaminCombo.ItemHeight = 23
+        Me.KelaminCombo.Items.AddRange(New Object() {"Laki - Laki", "Perempuan"})
+        Me.KelaminCombo.Location = New System.Drawing.Point(103, 180)
+        Me.KelaminCombo.Name = "KelaminCombo"
+        Me.KelaminCombo.Size = New System.Drawing.Size(147, 29)
+        Me.KelaminCombo.TabIndex = 31
+        Me.KelaminCombo.UseSelectable = True
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.KelaminCombo)
         Me.Controls.Add(Me.txtCariDGV)
         Me.Controls.Add(Me.btnCariDGV)
         Me.Controls.Add(Me.MetroButton1)
@@ -629,4 +642,5 @@ Partial Class pegawai
     Friend WithEvents txtCariDGV As MetroFramework.Controls.MetroTextBox
     Friend WithEvents btnCariDGV As MetroFramework.Controls.MetroButton
     Friend WithEvents txtKelaminPeg As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents KelaminCombo As MetroFramework.Controls.MetroComboBox
 End Class

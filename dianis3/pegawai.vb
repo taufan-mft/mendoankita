@@ -4,6 +4,7 @@
     Dim statusCari As Boolean = True
     Private Sub pegawai_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'koneksiDB()
+        txtKelaminPeg.Hide()
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg)
         tampilkanData("SELECT * FROM pegawai", DataGridView1)
         If (login.id <> "") Then
@@ -34,13 +35,14 @@
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
+        If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg) = True) Then
             MsgBox("Jangan kosong ra")
         Else
             Dim winny As Boolean = checkDuplicate("pegawai", "ID_pegawai", txtIDPeg.Text)
             If winny = True Then
                 MsgBox("weh duploikat")
             Else
+                txtKelaminPeg.Text = KelaminCombo.SelectedItem.ToString
                 simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg, txtUsername, txtPassword, txtFoto)
                 tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
@@ -48,7 +50,7 @@
     End Sub
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, KelaminCombo, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
 
         btnSave.Enabled = False
@@ -60,8 +62,9 @@
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
             MsgBox("Jangan kosong ra")
         Else
+
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
-                       "jeniskelamin", txtKelaminPeg.Text, "jabatan", txtJabatanPeg.Text, "foto", txtFoto.Text)
+                       "jeniskelamin", KelaminCombo.SelectedItem.ToString, "jabatan", txtJabatanPeg.Text, "foto", txtFoto.Text)
             tampilkanData("SELECT * FROM pegawai", DataGridView1)
             clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
             matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
