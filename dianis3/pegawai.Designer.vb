@@ -54,6 +54,7 @@ Partial Class pegawai
         Me.btnCariDGV = New MetroFramework.Controls.MetroButton()
         Me.txtKelaminPeg = New MetroFramework.Controls.MetroTextBox()
         Me.KelaminCombo = New MetroFramework.Controls.MetroComboBox()
+        Me.Combopegawai = New MetroFramework.Controls.MetroComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -242,7 +243,7 @@ Partial Class pegawai
         Me.txtJabatanPeg.CustomButton.UseSelectable = True
         Me.txtJabatanPeg.CustomButton.Visible = False
         Me.txtJabatanPeg.Lines = New String(-1) {}
-        Me.txtJabatanPeg.Location = New System.Drawing.Point(103, 215)
+        Me.txtJabatanPeg.Location = New System.Drawing.Point(633, 461)
         Me.txtJabatanPeg.MaxLength = 32767
         Me.txtJabatanPeg.Name = "txtJabatanPeg"
         Me.txtJabatanPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -565,11 +566,23 @@ Partial Class pegawai
         Me.KelaminCombo.TabIndex = 31
         Me.KelaminCombo.UseSelectable = True
         '
+        'Combopegawai
+        '
+        Me.Combopegawai.FormattingEnabled = True
+        Me.Combopegawai.ItemHeight = 23
+        Me.Combopegawai.Items.AddRange(New Object() {"Manager", "Cleaning", "Projectionist", "Cashier"})
+        Me.Combopegawai.Location = New System.Drawing.Point(103, 215)
+        Me.Combopegawai.Name = "Combopegawai"
+        Me.Combopegawai.Size = New System.Drawing.Size(147, 29)
+        Me.Combopegawai.TabIndex = 32
+        Me.Combopegawai.UseSelectable = True
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.Combopegawai)
         Me.Controls.Add(Me.KelaminCombo)
         Me.Controls.Add(Me.txtCariDGV)
         Me.Controls.Add(Me.btnCariDGV)
@@ -643,4 +656,5 @@ Partial Class pegawai
     Friend WithEvents btnCariDGV As MetroFramework.Controls.MetroButton
     Friend WithEvents txtKelaminPeg As MetroFramework.Controls.MetroTextBox
     Friend WithEvents KelaminCombo As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents Combopegawai As MetroFramework.Controls.MetroComboBox
 End Class

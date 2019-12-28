@@ -43,6 +43,7 @@
                 MsgBox("weh duploikat")
             Else
                 txtKelaminPeg.Text = KelaminCombo.SelectedItem.ToString
+                txtJabatanPeg.Text = Combopegawai.SelectedItem.ToString
                 simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg, txtUsername, txtPassword, txtFoto)
                 tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
@@ -50,7 +51,7 @@
     End Sub
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, KelaminCombo, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, KelaminCombo, Combopegawai, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
 
         btnSave.Enabled = False
@@ -64,7 +65,7 @@
         Else
 
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
-                       "jeniskelamin", KelaminCombo.SelectedItem.ToString, "jabatan", txtJabatanPeg.Text, "foto", txtFoto.Text)
+                       "jeniskelamin", KelaminCombo.SelectedItem.ToString, "jabatan", Combopegawai.SelectedItem.ToString, "foto", txtFoto.Text)
             tampilkanData("SELECT * FROM pegawai", DataGridView1)
             clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
             matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)

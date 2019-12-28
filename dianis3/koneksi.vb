@@ -184,7 +184,7 @@ Module koneksi
     End Sub
 
     'fungsi untuk menampilkan disertai combobox di pegawai
-    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, txtKelamin As MetroComboBox, ParamArray var() As MetroTextBox)
+    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, txtKelamin As MetroComboBox, txtJabatanlagi As MetroComboBox, ParamArray var() As MetroTextBox)
         On Error Resume Next
         For i As Integer = 0 To UBound(var, 1)
 
@@ -199,6 +199,7 @@ Module koneksi
             Else
                 var(i).Text = DGV.Rows(row).Cells(i).Value
                 txtKelamin.SelectedItem = DGV.Rows(row).Cells(4).Value
+                txtJabatanlagi.SelectedItem = DGV.Rows(row).Cells(5).Value
 
             End If
         Next
