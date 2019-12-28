@@ -1,9 +1,10 @@
 ﻿Public Class pegawai
     Dim OpenFileDialog1 As New OpenFileDialog
     Public Shared winnyName As String
+    Dim statusCari As Boolean = True
     Private Sub pegawai_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'koneksiDB()
-        matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+        matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg)
         tampilkanData("SELECT * FROM pegawai", DataGridView1)
         If (login.id <> "") Then
             Dim nomer As Integer
@@ -20,7 +21,7 @@
     End Sub
 
     Private Sub btnInput_Click(sender As Object, e As EventArgs) Handles btnInput.Click
-        nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+        nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg, txtPassword, txtUsername)
         clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
     End Sub
 
@@ -100,9 +101,31 @@
             Dim row As DataRow
             row = DS.Tables(0).Rows.Find(pegawai)
             txtNamaPeg.Text = row("namapegawai")
-            txtAlamatPeg = row("alamat")
+            txtAlamatPeg.Text = row("alamat")
+            txtKelaminPeg.Text = row("jeniskelamin")
+            txtNoHPPeg.Text = row("nomorhp")
+            txtJabatanPeg.Text = row("jabatan")
+            txtFoto.Text = row("foto")
+
+            Refresh()
+            MsgBox("Isyana")
+            Refresh()
+
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub btnCariDGV_Click(sender As Object, e As EventArgs) Handles btnCariDGV.Click
+        If (statusCari) Then
+            cariDGV(DataGridView1, "pegawai", "ID_pegawai", "namapegawai", "alamat", txtCariDGV.Text)
+            btnCariDGV.Text = "Reset"
+            statusCari = False
+        Else
+            tampilkanData("SELECT * FROM pegawai", DataGridView1)
+            btnCariDGV.Text = "Cari"
+            txtCariDGV.Text = ""
+            statusCari = True
+        End If
     End Sub
 End Class

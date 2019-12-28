@@ -30,7 +30,6 @@ Partial Class pegawai
         Me.MetroLabel3 = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel4 = New MetroFramework.Controls.MetroLabel()
         Me.txtNoHPPeg = New MetroFramework.Controls.MetroTextBox()
-        Me.txtKelaminPeg = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel5 = New MetroFramework.Controls.MetroLabel()
         Me.txtJabatanPeg = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel6 = New MetroFramework.Controls.MetroLabel()
@@ -51,6 +50,9 @@ Partial Class pegawai
         Me.txtPassword = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.txtCariDGV = New MetroFramework.Controls.MetroTextBox()
+        Me.btnCariDGV = New MetroFramework.Controls.MetroButton()
+        Me.txtKelaminPeg = New MetroFramework.Controls.MetroTextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -215,37 +217,6 @@ Partial Class pegawai
         Me.txtNoHPPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtNoHPPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
         '
-        'txtKelaminPeg
-        '
-        '
-        '
-        '
-        Me.txtKelaminPeg.CustomButton.Image = Nothing
-        Me.txtKelaminPeg.CustomButton.Location = New System.Drawing.Point(104, 1)
-        Me.txtKelaminPeg.CustomButton.Name = ""
-        Me.txtKelaminPeg.CustomButton.Size = New System.Drawing.Size(21, 21)
-        Me.txtKelaminPeg.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
-        Me.txtKelaminPeg.CustomButton.TabIndex = 1
-        Me.txtKelaminPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
-        Me.txtKelaminPeg.CustomButton.UseSelectable = True
-        Me.txtKelaminPeg.CustomButton.Visible = False
-        Me.txtKelaminPeg.Lines = New String() {"MetroTextBox5"}
-        Me.txtKelaminPeg.Location = New System.Drawing.Point(103, 186)
-        Me.txtKelaminPeg.MaxLength = 32767
-        Me.txtKelaminPeg.Name = "txtKelaminPeg"
-        Me.txtKelaminPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txtKelaminPeg.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txtKelaminPeg.SelectedText = ""
-        Me.txtKelaminPeg.SelectionLength = 0
-        Me.txtKelaminPeg.SelectionStart = 0
-        Me.txtKelaminPeg.ShortcutsEnabled = True
-        Me.txtKelaminPeg.Size = New System.Drawing.Size(126, 23)
-        Me.txtKelaminPeg.TabIndex = 9
-        Me.txtKelaminPeg.Text = "MetroTextBox5"
-        Me.txtKelaminPeg.UseSelectable = True
-        Me.txtKelaminPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
-        Me.txtKelaminPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
-        '
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
@@ -269,7 +240,7 @@ Partial Class pegawai
         Me.txtJabatanPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtJabatanPeg.CustomButton.UseSelectable = True
         Me.txtJabatanPeg.CustomButton.Visible = False
-        Me.txtJabatanPeg.Lines = New String() {"MetroTextBox6"}
+        Me.txtJabatanPeg.Lines = New String(-1) {}
         Me.txtJabatanPeg.Location = New System.Drawing.Point(103, 215)
         Me.txtJabatanPeg.MaxLength = 32767
         Me.txtJabatanPeg.Name = "txtJabatanPeg"
@@ -281,7 +252,6 @@ Partial Class pegawai
         Me.txtJabatanPeg.ShortcutsEnabled = True
         Me.txtJabatanPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtJabatanPeg.TabIndex = 11
-        Me.txtJabatanPeg.Text = "MetroTextBox6"
         Me.txtJabatanPeg.UseSelectable = True
         Me.txtJabatanPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtJabatanPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -440,7 +410,7 @@ Partial Class pegawai
         Me.txtUsername.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtUsername.CustomButton.UseSelectable = True
         Me.txtUsername.CustomButton.Visible = False
-        Me.txtUsername.Lines = New String() {"MetroTextBox6"}
+        Me.txtUsername.Lines = New String(-1) {}
         Me.txtUsername.Location = New System.Drawing.Point(103, 244)
         Me.txtUsername.MaxLength = 32767
         Me.txtUsername.Name = "txtUsername"
@@ -452,7 +422,6 @@ Partial Class pegawai
         Me.txtUsername.ShortcutsEnabled = True
         Me.txtUsername.Size = New System.Drawing.Size(126, 23)
         Me.txtUsername.TabIndex = 25
-        Me.txtUsername.Text = "MetroTextBox6"
         Me.txtUsername.UseSelectable = True
         Me.txtUsername.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtUsername.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -480,7 +449,7 @@ Partial Class pegawai
         Me.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtPassword.CustomButton.UseSelectable = True
         Me.txtPassword.CustomButton.Visible = False
-        Me.txtPassword.Lines = New String() {"Password:"}
+        Me.txtPassword.Lines = New String(-1) {}
         Me.txtPassword.Location = New System.Drawing.Point(103, 273)
         Me.txtPassword.MaxLength = 32767
         Me.txtPassword.Name = "txtPassword"
@@ -492,7 +461,6 @@ Partial Class pegawai
         Me.txtPassword.ShortcutsEnabled = True
         Me.txtPassword.Size = New System.Drawing.Size(126, 23)
         Me.txtPassword.TabIndex = 27
-        Me.txtPassword.Text = "Password:"
         Me.txtPassword.UseSelectable = True
         Me.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtPassword.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -508,18 +476,90 @@ Partial Class pegawai
         '
         'MetroButton1
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(286, 70)
+        Me.MetroButton1.Location = New System.Drawing.Point(252, 70)
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(75, 23)
         Me.MetroButton1.TabIndex = 28
         Me.MetroButton1.Text = "Cari"
         Me.MetroButton1.UseSelectable = True
         '
+        'txtCariDGV
+        '
+        '
+        '
+        '
+        Me.txtCariDGV.CustomButton.Image = Nothing
+        Me.txtCariDGV.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtCariDGV.CustomButton.Name = ""
+        Me.txtCariDGV.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtCariDGV.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtCariDGV.CustomButton.TabIndex = 1
+        Me.txtCariDGV.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtCariDGV.CustomButton.UseSelectable = True
+        Me.txtCariDGV.CustomButton.Visible = False
+        Me.txtCariDGV.Lines = New String(-1) {}
+        Me.txtCariDGV.Location = New System.Drawing.Point(345, 356)
+        Me.txtCariDGV.MaxLength = 32767
+        Me.txtCariDGV.Name = "txtCariDGV"
+        Me.txtCariDGV.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtCariDGV.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtCariDGV.SelectedText = ""
+        Me.txtCariDGV.SelectionLength = 0
+        Me.txtCariDGV.SelectionStart = 0
+        Me.txtCariDGV.ShortcutsEnabled = True
+        Me.txtCariDGV.Size = New System.Drawing.Size(126, 23)
+        Me.txtCariDGV.TabIndex = 30
+        Me.txtCariDGV.UseSelectable = True
+        Me.txtCariDGV.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtCariDGV.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
+        'btnCariDGV
+        '
+        Me.btnCariDGV.Location = New System.Drawing.Point(499, 356)
+        Me.btnCariDGV.Name = "btnCariDGV"
+        Me.btnCariDGV.Size = New System.Drawing.Size(75, 23)
+        Me.btnCariDGV.TabIndex = 29
+        Me.btnCariDGV.Text = "Cari"
+        Me.btnCariDGV.UseSelectable = True
+        '
+        'txtKelaminPeg
+        '
+        '
+        '
+        '
+        Me.txtKelaminPeg.CustomButton.Image = Nothing
+        Me.txtKelaminPeg.CustomButton.Location = New System.Drawing.Point(104, 1)
+        Me.txtKelaminPeg.CustomButton.Name = ""
+        Me.txtKelaminPeg.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.txtKelaminPeg.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.txtKelaminPeg.CustomButton.TabIndex = 1
+        Me.txtKelaminPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.txtKelaminPeg.CustomButton.UseSelectable = True
+        Me.txtKelaminPeg.CustomButton.Visible = False
+        Me.txtKelaminPeg.Lines = New String() {"MetroTextBox5"}
+        Me.txtKelaminPeg.Location = New System.Drawing.Point(103, 186)
+        Me.txtKelaminPeg.MaxLength = 32767
+        Me.txtKelaminPeg.Name = "txtKelaminPeg"
+        Me.txtKelaminPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtKelaminPeg.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txtKelaminPeg.SelectedText = ""
+        Me.txtKelaminPeg.SelectionLength = 0
+        Me.txtKelaminPeg.SelectionStart = 0
+        Me.txtKelaminPeg.ShortcutsEnabled = True
+        Me.txtKelaminPeg.Size = New System.Drawing.Size(126, 23)
+        Me.txtKelaminPeg.TabIndex = 9
+        Me.txtKelaminPeg.Text = "MetroTextBox5"
+        Me.txtKelaminPeg.UseSelectable = True
+        Me.txtKelaminPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.txtKelaminPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.txtCariDGV)
+        Me.Controls.Add(Me.btnCariDGV)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.MetroLabel10)
@@ -566,7 +606,6 @@ Partial Class pegawai
     Friend WithEvents MetroLabel3 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel4 As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtNoHPPeg As MetroFramework.Controls.MetroTextBox
-    Friend WithEvents txtKelaminPeg As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel5 As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtJabatanPeg As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel6 As MetroFramework.Controls.MetroLabel
@@ -587,4 +626,7 @@ Partial Class pegawai
     Friend WithEvents txtPassword As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents txtCariDGV As MetroFramework.Controls.MetroTextBox
+    Friend WithEvents btnCariDGV As MetroFramework.Controls.MetroButton
+    Friend WithEvents txtKelaminPeg As MetroFramework.Controls.MetroTextBox
 End Class

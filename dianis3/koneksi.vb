@@ -244,4 +244,15 @@ Module koneksi
         End If
         Return hasil
     End Function
+
+    Sub cariDGV(DGV As DataGridView, namatabel As String, namakol1 As String, namakol2 As String, namakol3 As String, value1 As String)
+        Dim raisani As String
+        raisani = "SELECT * FROM " & namatabel & " WHERE " & namakol1 & " like '%" & value1.Replace("'", "''") & "%' or " & namakol2 & " like '%" & value1.Replace("'", "''") & "%' or " & namakol3 & " like '%" & value1.Replace("'", "''") & "%' "
+        DA = New OleDb.OleDbDataAdapter(raisani, Conn)
+        DS = New DataSet
+        Dim SRT As New DataTable
+        SRT.Clear()
+        DA.Fill(SRT)
+        DGV.DataSource = SRT
+    End Sub
 End Module
