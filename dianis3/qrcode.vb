@@ -62,7 +62,7 @@ Public Class qrcode
 
         If OPD.ShowDialog() = Windows.Forms.DialogResult.OK Then
             Try
-                PictureBox1.Load(OPD.FileName)
+                PictureBox2.Load(OPD.FileName)
             Catch ex As Exception
             End Try
         End If

@@ -90,4 +90,19 @@
         hapusData("pegawai", "ID_Pegawai", txtIDPeg.Text)
         tampilkanData("SELECT * FROM pegawai", DataGridView1)
     End Sub
+
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
+        nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
+        Dim pegawai = InputBox("Woi anjeng, masukin ID pegawai!")
+
+        Try
+            DS.Tables(0).PrimaryKey = New DataColumn() {DS.Tables(0).Columns("ID_Pegawai")}
+            Dim row As DataRow
+            row = DS.Tables(0).Rows.Find(pegawai)
+            txtNamaPeg.Text = row("namapegawai")
+            txtAlamatPeg = row("alamat")
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

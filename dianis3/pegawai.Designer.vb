@@ -50,6 +50,7 @@ Partial Class pegawai
         Me.MetroLabel9 = New MetroFramework.Controls.MetroLabel()
         Me.txtPassword = New MetroFramework.Controls.MetroTextBox()
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -505,11 +506,21 @@ Partial Class pegawai
         Me.MetroLabel10.TabIndex = 26
         Me.MetroLabel10.Text = "Password:"
         '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(286, 70)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(75, 23)
+        Me.MetroButton1.TabIndex = 28
+        Me.MetroButton1.Text = "Cari"
+        Me.MetroButton1.UseSelectable = True
+        '
         'pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 564)
+        Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.MetroLabel10)
         Me.Controls.Add(Me.txtUsername)
@@ -575,4 +586,5 @@ Partial Class pegawai
     Friend WithEvents MetroLabel9 As MetroFramework.Controls.MetroLabel
     Friend WithEvents txtPassword As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class
