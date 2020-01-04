@@ -17,7 +17,7 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If (checkEmpty(txtIDFilm, txtJudulFilm, txtGenreFilm, txtRatingFilm) = True) Then
-            MsgBox("Jangan kosong raisa")
+            MsgBox("Jangan kosong")
         Else
             Dim winny As Boolean = checkDuplicate("film", "ID_film", txtIDFilm.Text)
             If winny = True Then
