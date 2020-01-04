@@ -82,7 +82,7 @@ Partial Class pegawai
         Me.txtIDPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtIDPeg.CustomButton.UseSelectable = True
         Me.txtIDPeg.CustomButton.Visible = False
-        Me.txtIDPeg.Lines = New String() {"txtIDpeg"}
+        Me.txtIDPeg.Lines = New String(-1) {}
         Me.txtIDPeg.Location = New System.Drawing.Point(103, 70)
         Me.txtIDPeg.MaxLength = 32767
         Me.txtIDPeg.Name = "txtIDPeg"
@@ -94,7 +94,6 @@ Partial Class pegawai
         Me.txtIDPeg.ShortcutsEnabled = True
         Me.txtIDPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtIDPeg.TabIndex = 1
-        Me.txtIDPeg.Text = "txtIDpeg"
         Me.txtIDPeg.UseSelectable = True
         Me.txtIDPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtIDPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -113,7 +112,7 @@ Partial Class pegawai
         Me.txtNamaPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtNamaPeg.CustomButton.UseSelectable = True
         Me.txtNamaPeg.CustomButton.Visible = False
-        Me.txtNamaPeg.Lines = New String() {"txt"}
+        Me.txtNamaPeg.Lines = New String(-1) {}
         Me.txtNamaPeg.Location = New System.Drawing.Point(103, 99)
         Me.txtNamaPeg.MaxLength = 32767
         Me.txtNamaPeg.Name = "txtNamaPeg"
@@ -125,7 +124,6 @@ Partial Class pegawai
         Me.txtNamaPeg.ShortcutsEnabled = True
         Me.txtNamaPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtNamaPeg.TabIndex = 3
-        Me.txtNamaPeg.Text = "txt"
         Me.txtNamaPeg.UseSelectable = True
         Me.txtNamaPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtNamaPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -153,7 +151,7 @@ Partial Class pegawai
         Me.txtAlamatPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtAlamatPeg.CustomButton.UseSelectable = True
         Me.txtAlamatPeg.CustomButton.Visible = False
-        Me.txtAlamatPeg.Lines = New String() {"MetroTextBox3"}
+        Me.txtAlamatPeg.Lines = New String(-1) {}
         Me.txtAlamatPeg.Location = New System.Drawing.Point(103, 128)
         Me.txtAlamatPeg.MaxLength = 32767
         Me.txtAlamatPeg.Name = "txtAlamatPeg"
@@ -165,7 +163,6 @@ Partial Class pegawai
         Me.txtAlamatPeg.ShortcutsEnabled = True
         Me.txtAlamatPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtAlamatPeg.TabIndex = 7
-        Me.txtAlamatPeg.Text = "MetroTextBox3"
         Me.txtAlamatPeg.UseSelectable = True
         Me.txtAlamatPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtAlamatPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -202,7 +199,7 @@ Partial Class pegawai
         Me.txtNoHPPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtNoHPPeg.CustomButton.UseSelectable = True
         Me.txtNoHPPeg.CustomButton.Visible = False
-        Me.txtNoHPPeg.Lines = New String() {"MetroTextBox4"}
+        Me.txtNoHPPeg.Lines = New String(-1) {}
         Me.txtNoHPPeg.Location = New System.Drawing.Point(103, 157)
         Me.txtNoHPPeg.MaxLength = 32767
         Me.txtNoHPPeg.Name = "txtNoHPPeg"
@@ -214,7 +211,6 @@ Partial Class pegawai
         Me.txtNoHPPeg.ShortcutsEnabled = True
         Me.txtNoHPPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtNoHPPeg.TabIndex = 5
-        Me.txtNoHPPeg.Text = "MetroTextBox4"
         Me.txtNoHPPeg.UseSelectable = True
         Me.txtNoHPPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtNoHPPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -222,7 +218,7 @@ Partial Class pegawai
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
-        Me.MetroLabel5.Location = New System.Drawing.Point(9, 186)
+        Me.MetroLabel5.Location = New System.Drawing.Point(9, 192)
         Me.MetroLabel5.Name = "MetroLabel5"
         Me.MetroLabel5.Size = New System.Drawing.Size(88, 19)
         Me.MetroLabel5.TabIndex = 8
@@ -261,7 +257,7 @@ Partial Class pegawai
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
-        Me.MetroLabel6.Location = New System.Drawing.Point(9, 215)
+        Me.MetroLabel6.Location = New System.Drawing.Point(9, 221)
         Me.MetroLabel6.Name = "MetroLabel6"
         Me.MetroLabel6.Size = New System.Drawing.Size(57, 19)
         Me.MetroLabel6.TabIndex = 10
@@ -361,7 +357,7 @@ Partial Class pegawai
         Me.txtFoto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtFoto.CustomButton.UseSelectable = True
         Me.txtFoto.CustomButton.Visible = False
-        Me.txtFoto.Lines = New String() {"txt"}
+        Me.txtFoto.Lines = New String(-1) {}
         Me.txtFoto.Location = New System.Drawing.Point(605, 305)
         Me.txtFoto.MaxLength = 32767
         Me.txtFoto.Name = "txtFoto"
@@ -373,7 +369,6 @@ Partial Class pegawai
         Me.txtFoto.ShortcutsEnabled = True
         Me.txtFoto.Size = New System.Drawing.Size(126, 23)
         Me.txtFoto.TabIndex = 21
-        Me.txtFoto.Text = "txt"
         Me.txtFoto.UseSelectable = True
         Me.txtFoto.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtFoto.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -413,7 +408,7 @@ Partial Class pegawai
         Me.txtUsername.CustomButton.UseSelectable = True
         Me.txtUsername.CustomButton.Visible = False
         Me.txtUsername.Lines = New String(-1) {}
-        Me.txtUsername.Location = New System.Drawing.Point(103, 244)
+        Me.txtUsername.Location = New System.Drawing.Point(103, 256)
         Me.txtUsername.MaxLength = 32767
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -431,7 +426,7 @@ Partial Class pegawai
         'MetroLabel9
         '
         Me.MetroLabel9.AutoSize = True
-        Me.MetroLabel9.Location = New System.Drawing.Point(9, 244)
+        Me.MetroLabel9.Location = New System.Drawing.Point(9, 256)
         Me.MetroLabel9.Name = "MetroLabel9"
         Me.MetroLabel9.Size = New System.Drawing.Size(71, 19)
         Me.MetroLabel9.TabIndex = 24
@@ -452,7 +447,7 @@ Partial Class pegawai
         Me.txtPassword.CustomButton.UseSelectable = True
         Me.txtPassword.CustomButton.Visible = False
         Me.txtPassword.Lines = New String(-1) {}
-        Me.txtPassword.Location = New System.Drawing.Point(103, 273)
+        Me.txtPassword.Location = New System.Drawing.Point(103, 285)
         Me.txtPassword.MaxLength = 32767
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -470,7 +465,7 @@ Partial Class pegawai
         'MetroLabel10
         '
         Me.MetroLabel10.AutoSize = True
-        Me.MetroLabel10.Location = New System.Drawing.Point(9, 273)
+        Me.MetroLabel10.Location = New System.Drawing.Point(9, 285)
         Me.MetroLabel10.Name = "MetroLabel10"
         Me.MetroLabel10.Size = New System.Drawing.Size(66, 19)
         Me.MetroLabel10.TabIndex = 26
@@ -538,7 +533,7 @@ Partial Class pegawai
         Me.txtKelaminPeg.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
         Me.txtKelaminPeg.CustomButton.UseSelectable = True
         Me.txtKelaminPeg.CustomButton.Visible = False
-        Me.txtKelaminPeg.Lines = New String() {"MetroTextBox5"}
+        Me.txtKelaminPeg.Lines = New String(-1) {}
         Me.txtKelaminPeg.Location = New System.Drawing.Point(633, 490)
         Me.txtKelaminPeg.MaxLength = 32767
         Me.txtKelaminPeg.Name = "txtKelaminPeg"
@@ -550,7 +545,6 @@ Partial Class pegawai
         Me.txtKelaminPeg.ShortcutsEnabled = True
         Me.txtKelaminPeg.Size = New System.Drawing.Size(126, 23)
         Me.txtKelaminPeg.TabIndex = 9
-        Me.txtKelaminPeg.Text = "MetroTextBox5"
         Me.txtKelaminPeg.UseSelectable = True
         Me.txtKelaminPeg.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.txtKelaminPeg.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
@@ -560,9 +554,9 @@ Partial Class pegawai
         Me.KelaminCombo.FormattingEnabled = True
         Me.KelaminCombo.ItemHeight = 23
         Me.KelaminCombo.Items.AddRange(New Object() {"Laki - Laki", "Perempuan"})
-        Me.KelaminCombo.Location = New System.Drawing.Point(103, 180)
+        Me.KelaminCombo.Location = New System.Drawing.Point(103, 186)
         Me.KelaminCombo.Name = "KelaminCombo"
-        Me.KelaminCombo.Size = New System.Drawing.Size(147, 29)
+        Me.KelaminCombo.Size = New System.Drawing.Size(126, 29)
         Me.KelaminCombo.TabIndex = 31
         Me.KelaminCombo.UseSelectable = True
         '
@@ -571,9 +565,9 @@ Partial Class pegawai
         Me.Combopegawai.FormattingEnabled = True
         Me.Combopegawai.ItemHeight = 23
         Me.Combopegawai.Items.AddRange(New Object() {"Manager", "Cleaning", "Projectionist", "Cashier"})
-        Me.Combopegawai.Location = New System.Drawing.Point(103, 215)
+        Me.Combopegawai.Location = New System.Drawing.Point(103, 221)
         Me.Combopegawai.Name = "Combopegawai"
-        Me.Combopegawai.Size = New System.Drawing.Size(147, 29)
+        Me.Combopegawai.Size = New System.Drawing.Size(126, 29)
         Me.Combopegawai.TabIndex = 32
         Me.Combopegawai.UseSelectable = True
         '

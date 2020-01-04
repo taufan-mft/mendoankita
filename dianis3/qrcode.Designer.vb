@@ -38,14 +38,14 @@ Partial Class qrcode
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(25, 21)
+        Me.TextBox1.Location = New System.Drawing.Point(23, 77)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(154, 20)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(25, 56)
+        Me.Button1.Location = New System.Drawing.Point(23, 112)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class qrcode
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 111)
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 167)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(154, 171)
         Me.PictureBox1.TabIndex = 2
@@ -62,7 +62,7 @@ Partial Class qrcode
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(50, 298)
+        Me.Button2.Location = New System.Drawing.Point(102, 354)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 3
@@ -71,7 +71,7 @@ Partial Class qrcode
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(494, 334)
+        Me.Button3.Location = New System.Drawing.Point(448, 354)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 7
@@ -80,7 +80,7 @@ Partial Class qrcode
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(386, 111)
+        Me.PictureBox2.Location = New System.Drawing.Point(369, 167)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(154, 171)
         Me.PictureBox2.TabIndex = 6
@@ -88,7 +88,7 @@ Partial Class qrcode
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(106, 56)
+        Me.Button4.Location = New System.Drawing.Point(104, 112)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 5
@@ -97,14 +97,14 @@ Partial Class qrcode
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(386, 21)
+        Me.TextBox2.Location = New System.Drawing.Point(369, 77)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(156, 20)
         Me.TextBox2.TabIndex = 4
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(386, 56)
+        Me.Button5.Location = New System.Drawing.Point(369, 112)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 8
@@ -113,7 +113,7 @@ Partial Class qrcode
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(467, 56)
+        Me.Button6.Location = New System.Drawing.Point(450, 112)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 9

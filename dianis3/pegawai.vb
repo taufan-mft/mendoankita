@@ -112,7 +112,7 @@
             txtFoto.Text = row("foto")
 
             Refresh()
-            MsgBox("Isyana")
+            MsgBox(txtNamaPeg.Text)
             Refresh()
 
         Catch ex As Exception
@@ -132,4 +132,6 @@
             statusCari = True
         End If
     End Sub
+
+
 End Class
