@@ -284,7 +284,7 @@ Partial Class film
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(527, 439)
+        Me.ClientSize = New System.Drawing.Size(525, 443)
         Me.Controls.Add(Me.MetroLabel8)
         Me.Controls.Add(Me.MetroLabel7)
         Me.Controls.Add(Me.DataGridView1)
