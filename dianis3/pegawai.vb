@@ -36,7 +36,7 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg) = True) Then
-            MsgBox("Jangan kosong ra")
+            MsgBox("Jangan kosong")
         Else
             Dim winny As Boolean = checkDuplicate("pegawai", "ID_pegawai", txtIDPeg.Text)
             If winny = True Then
@@ -61,7 +61,7 @@
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
-            MsgBox("Jangan kosong ra")
+            MsgBox("Jangan kosong")
         Else
 
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
@@ -153,6 +153,4 @@
         End Select
 
     End Sub
-
-
 End Class

@@ -2,13 +2,6 @@
     Public Shared username, password, id As String
 
     Dim winny As String
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub MetroTextBox1_Click(sender As Object, e As EventArgs) Handles txtPassword.Click
-
-    End Sub
 
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
 

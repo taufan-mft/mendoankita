@@ -66,7 +66,7 @@ Partial Class pegawai
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(9, 70)
+        Me.MetroLabel1.Location = New System.Drawing.Point(30, 71)
         Me.MetroLabel1.Name = "MetroLabel1"
         Me.MetroLabel1.Size = New System.Drawing.Size(76, 19)
         Me.MetroLabel1.TabIndex = 0
@@ -87,7 +87,7 @@ Partial Class pegawai
         Me.txtIDPeg.CustomButton.UseSelectable = True
         Me.txtIDPeg.CustomButton.Visible = False
         Me.txtIDPeg.Lines = New String(-1) {}
-        Me.txtIDPeg.Location = New System.Drawing.Point(151, 70)
+        Me.txtIDPeg.Location = New System.Drawing.Point(172, 71)
         Me.txtIDPeg.MaxLength = 32767
         Me.txtIDPeg.Name = "txtIDPeg"
         Me.txtIDPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -117,7 +117,7 @@ Partial Class pegawai
         Me.txtNamaPeg.CustomButton.UseSelectable = True
         Me.txtNamaPeg.CustomButton.Visible = False
         Me.txtNamaPeg.Lines = New String(-1) {}
-        Me.txtNamaPeg.Location = New System.Drawing.Point(151, 108)
+        Me.txtNamaPeg.Location = New System.Drawing.Point(172, 109)
         Me.txtNamaPeg.MaxLength = 32767
         Me.txtNamaPeg.Name = "txtNamaPeg"
         Me.txtNamaPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -135,7 +135,7 @@ Partial Class pegawai
         'MetroLabel2
         '
         Me.MetroLabel2.AutoSize = True
-        Me.MetroLabel2.Location = New System.Drawing.Point(9, 108)
+        Me.MetroLabel2.Location = New System.Drawing.Point(30, 109)
         Me.MetroLabel2.Name = "MetroLabel2"
         Me.MetroLabel2.Size = New System.Drawing.Size(48, 19)
         Me.MetroLabel2.TabIndex = 2
@@ -156,7 +156,7 @@ Partial Class pegawai
         Me.txtAlamatPeg.CustomButton.UseSelectable = True
         Me.txtAlamatPeg.CustomButton.Visible = False
         Me.txtAlamatPeg.Lines = New String(-1) {}
-        Me.txtAlamatPeg.Location = New System.Drawing.Point(151, 148)
+        Me.txtAlamatPeg.Location = New System.Drawing.Point(172, 149)
         Me.txtAlamatPeg.MaxLength = 32767
         Me.txtAlamatPeg.Name = "txtAlamatPeg"
         Me.txtAlamatPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -174,7 +174,7 @@ Partial Class pegawai
         'MetroLabel3
         '
         Me.MetroLabel3.AutoSize = True
-        Me.MetroLabel3.Location = New System.Drawing.Point(9, 148)
+        Me.MetroLabel3.Location = New System.Drawing.Point(30, 149)
         Me.MetroLabel3.Name = "MetroLabel3"
         Me.MetroLabel3.Size = New System.Drawing.Size(54, 19)
         Me.MetroLabel3.TabIndex = 6
@@ -183,7 +183,7 @@ Partial Class pegawai
         'MetroLabel4
         '
         Me.MetroLabel4.AutoSize = True
-        Me.MetroLabel4.Location = New System.Drawing.Point(9, 186)
+        Me.MetroLabel4.Location = New System.Drawing.Point(30, 187)
         Me.MetroLabel4.Name = "MetroLabel4"
         Me.MetroLabel4.Size = New System.Drawing.Size(76, 19)
         Me.MetroLabel4.TabIndex = 4
@@ -204,7 +204,7 @@ Partial Class pegawai
         Me.txtNoHPPeg.CustomButton.UseSelectable = True
         Me.txtNoHPPeg.CustomButton.Visible = False
         Me.txtNoHPPeg.Lines = New String(-1) {}
-        Me.txtNoHPPeg.Location = New System.Drawing.Point(151, 186)
+        Me.txtNoHPPeg.Location = New System.Drawing.Point(172, 187)
         Me.txtNoHPPeg.MaxLength = 32767
         Me.txtNoHPPeg.Name = "txtNoHPPeg"
         Me.txtNoHPPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -222,7 +222,7 @@ Partial Class pegawai
         'MetroLabel5
         '
         Me.MetroLabel5.AutoSize = True
-        Me.MetroLabel5.Location = New System.Drawing.Point(9, 231)
+        Me.MetroLabel5.Location = New System.Drawing.Point(30, 232)
         Me.MetroLabel5.Name = "MetroLabel5"
         Me.MetroLabel5.Size = New System.Drawing.Size(88, 19)
         Me.MetroLabel5.TabIndex = 8
@@ -243,7 +243,7 @@ Partial Class pegawai
         Me.txtJabatanPeg.CustomButton.UseSelectable = True
         Me.txtJabatanPeg.CustomButton.Visible = False
         Me.txtJabatanPeg.Lines = New String(-1) {}
-        Me.txtJabatanPeg.Location = New System.Drawing.Point(151, 445)
+        Me.txtJabatanPeg.Location = New System.Drawing.Point(172, 446)
         Me.txtJabatanPeg.MaxLength = 32767
         Me.txtJabatanPeg.Name = "txtJabatanPeg"
         Me.txtJabatanPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -261,7 +261,7 @@ Partial Class pegawai
         'MetroLabel6
         '
         Me.MetroLabel6.AutoSize = True
-        Me.MetroLabel6.Location = New System.Drawing.Point(9, 270)
+        Me.MetroLabel6.Location = New System.Drawing.Point(30, 271)
         Me.MetroLabel6.Name = "MetroLabel6"
         Me.MetroLabel6.Size = New System.Drawing.Size(57, 19)
         Me.MetroLabel6.TabIndex = 10
@@ -269,7 +269,7 @@ Partial Class pegawai
         '
         'btnInput
         '
-        Me.btnInput.Location = New System.Drawing.Point(471, 144)
+        Me.btnInput.Location = New System.Drawing.Point(492, 145)
         Me.btnInput.Name = "btnInput"
         Me.btnInput.Size = New System.Drawing.Size(75, 23)
         Me.btnInput.TabIndex = 12
@@ -278,7 +278,7 @@ Partial Class pegawai
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(558, 144)
+        Me.btnSave.Location = New System.Drawing.Point(579, 145)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
         Me.btnSave.TabIndex = 13
@@ -287,7 +287,7 @@ Partial Class pegawai
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(639, 144)
+        Me.btnEdit.Location = New System.Drawing.Point(660, 145)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(75, 23)
         Me.btnEdit.TabIndex = 14
@@ -296,7 +296,7 @@ Partial Class pegawai
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(639, 186)
+        Me.btnDelete.Location = New System.Drawing.Point(660, 187)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 23)
         Me.btnDelete.TabIndex = 15
@@ -305,7 +305,7 @@ Partial Class pegawai
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(471, 186)
+        Me.btnCancel.Location = New System.Drawing.Point(492, 187)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 16
@@ -314,7 +314,7 @@ Partial Class pegawai
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(558, 186)
+        Me.btnExit.Location = New System.Drawing.Point(579, 187)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 17
@@ -324,14 +324,14 @@ Partial Class pegawai
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(300, 260)
+        Me.DataGridView1.Location = New System.Drawing.Point(321, 261)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(414, 161)
         Me.DataGridView1.TabIndex = 18
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(300, 99)
+        Me.PictureBox1.Location = New System.Drawing.Point(321, 100)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(154, 155)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -340,7 +340,7 @@ Partial Class pegawai
         '
         'txtBrowse
         '
-        Me.txtBrowse.Location = New System.Drawing.Point(639, 99)
+        Me.txtBrowse.Location = New System.Drawing.Point(660, 100)
         Me.txtBrowse.Name = "txtBrowse"
         Me.txtBrowse.Size = New System.Drawing.Size(75, 23)
         Me.txtBrowse.TabIndex = 20
@@ -362,7 +362,7 @@ Partial Class pegawai
         Me.txtFoto.CustomButton.UseSelectable = True
         Me.txtFoto.CustomButton.Visible = False
         Me.txtFoto.Lines = New String(-1) {}
-        Me.txtFoto.Location = New System.Drawing.Point(471, 99)
+        Me.txtFoto.Location = New System.Drawing.Point(492, 100)
         Me.txtFoto.MaxLength = 32767
         Me.txtFoto.Name = "txtFoto"
         Me.txtFoto.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -412,7 +412,7 @@ Partial Class pegawai
         Me.txtUsername.CustomButton.UseSelectable = True
         Me.txtUsername.CustomButton.Visible = False
         Me.txtUsername.Lines = New String(-1) {}
-        Me.txtUsername.Location = New System.Drawing.Point(151, 387)
+        Me.txtUsername.Location = New System.Drawing.Point(172, 384)
         Me.txtUsername.MaxLength = 32767
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -430,7 +430,7 @@ Partial Class pegawai
         'MetroLabel9
         '
         Me.MetroLabel9.AutoSize = True
-        Me.MetroLabel9.Location = New System.Drawing.Point(9, 387)
+        Me.MetroLabel9.Location = New System.Drawing.Point(30, 384)
         Me.MetroLabel9.Name = "MetroLabel9"
         Me.MetroLabel9.Size = New System.Drawing.Size(71, 19)
         Me.MetroLabel9.TabIndex = 24
@@ -451,7 +451,7 @@ Partial Class pegawai
         Me.txtPassword.CustomButton.UseSelectable = True
         Me.txtPassword.CustomButton.Visible = False
         Me.txtPassword.Lines = New String(-1) {}
-        Me.txtPassword.Location = New System.Drawing.Point(151, 416)
+        Me.txtPassword.Location = New System.Drawing.Point(172, 417)
         Me.txtPassword.MaxLength = 32767
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -469,7 +469,7 @@ Partial Class pegawai
         'MetroLabel10
         '
         Me.MetroLabel10.AutoSize = True
-        Me.MetroLabel10.Location = New System.Drawing.Point(9, 416)
+        Me.MetroLabel10.Location = New System.Drawing.Point(30, 417)
         Me.MetroLabel10.Name = "MetroLabel10"
         Me.MetroLabel10.Size = New System.Drawing.Size(66, 19)
         Me.MetroLabel10.TabIndex = 26
@@ -477,7 +477,7 @@ Partial Class pegawai
         '
         'MetroButton1
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(300, 70)
+        Me.MetroButton1.Location = New System.Drawing.Point(321, 71)
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(75, 23)
         Me.MetroButton1.TabIndex = 28
@@ -499,7 +499,7 @@ Partial Class pegawai
         Me.txtCariDGV.CustomButton.UseSelectable = True
         Me.txtCariDGV.CustomButton.Visible = False
         Me.txtCariDGV.Lines = New String(-1) {}
-        Me.txtCariDGV.Location = New System.Drawing.Point(469, 225)
+        Me.txtCariDGV.Location = New System.Drawing.Point(490, 226)
         Me.txtCariDGV.MaxLength = 32767
         Me.txtCariDGV.Name = "txtCariDGV"
         Me.txtCariDGV.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -516,7 +516,7 @@ Partial Class pegawai
         '
         'btnCariDGV
         '
-        Me.btnCariDGV.Location = New System.Drawing.Point(639, 225)
+        Me.btnCariDGV.Location = New System.Drawing.Point(660, 226)
         Me.btnCariDGV.Name = "btnCariDGV"
         Me.btnCariDGV.Size = New System.Drawing.Size(75, 23)
         Me.btnCariDGV.TabIndex = 29
@@ -538,7 +538,7 @@ Partial Class pegawai
         Me.txtKelaminPeg.CustomButton.UseSelectable = True
         Me.txtKelaminPeg.CustomButton.Visible = False
         Me.txtKelaminPeg.Lines = New String(-1) {}
-        Me.txtKelaminPeg.Location = New System.Drawing.Point(151, 474)
+        Me.txtKelaminPeg.Location = New System.Drawing.Point(172, 475)
         Me.txtKelaminPeg.MaxLength = 32767
         Me.txtKelaminPeg.Name = "txtKelaminPeg"
         Me.txtKelaminPeg.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -558,7 +558,7 @@ Partial Class pegawai
         Me.Cbxkelamin.FormattingEnabled = True
         Me.Cbxkelamin.ItemHeight = 23
         Me.Cbxkelamin.Items.AddRange(New Object() {"Laki - Laki", "Perempuan"})
-        Me.Cbxkelamin.Location = New System.Drawing.Point(151, 225)
+        Me.Cbxkelamin.Location = New System.Drawing.Point(172, 226)
         Me.Cbxkelamin.Name = "Cbxkelamin"
         Me.Cbxkelamin.Size = New System.Drawing.Size(126, 29)
         Me.Cbxkelamin.TabIndex = 31
@@ -569,7 +569,7 @@ Partial Class pegawai
         Me.cbxjabatan.FormattingEnabled = True
         Me.cbxjabatan.ItemHeight = 23
         Me.cbxjabatan.Items.AddRange(New Object() {"Manager", "Cleaning", "Projectionist", "Cashier"})
-        Me.cbxjabatan.Location = New System.Drawing.Point(151, 270)
+        Me.cbxjabatan.Location = New System.Drawing.Point(172, 271)
         Me.cbxjabatan.Name = "cbxjabatan"
         Me.cbxjabatan.Size = New System.Drawing.Size(126, 29)
         Me.cbxjabatan.TabIndex = 32
@@ -578,7 +578,7 @@ Partial Class pegawai
         'MetroLabel11
         '
         Me.MetroLabel11.AutoSize = True
-        Me.MetroLabel11.Location = New System.Drawing.Point(8, 314)
+        Me.MetroLabel11.Location = New System.Drawing.Point(29, 315)
         Me.MetroLabel11.Name = "MetroLabel11"
         Me.MetroLabel11.Size = New System.Drawing.Size(86, 19)
         Me.MetroLabel11.TabIndex = 33
@@ -586,7 +586,7 @@ Partial Class pegawai
         '
         'Date1
         '
-        Me.Date1.Location = New System.Drawing.Point(151, 314)
+        Me.Date1.Location = New System.Drawing.Point(172, 315)
         Me.Date1.Name = "Date1"
         Me.Date1.Size = New System.Drawing.Size(126, 20)
         Me.Date1.TabIndex = 36
@@ -594,7 +594,7 @@ Partial Class pegawai
         'MetroLabel12
         '
         Me.MetroLabel12.AutoSize = True
-        Me.MetroLabel12.Location = New System.Drawing.Point(9, 345)
+        Me.MetroLabel12.Location = New System.Drawing.Point(30, 346)
         Me.MetroLabel12.Name = "MetroLabel12"
         Me.MetroLabel12.Size = New System.Drawing.Size(49, 19)
         Me.MetroLabel12.TabIndex = 37
@@ -615,7 +615,7 @@ Partial Class pegawai
         Me.txtumur.CustomButton.UseSelectable = True
         Me.txtumur.CustomButton.Visible = False
         Me.txtumur.Lines = New String(-1) {}
-        Me.txtumur.Location = New System.Drawing.Point(151, 349)
+        Me.txtumur.Location = New System.Drawing.Point(172, 350)
         Me.txtumur.MaxLength = 32767
         Me.txtumur.Name = "txtumur"
         Me.txtumur.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -634,7 +634,7 @@ Partial Class pegawai
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(880, 513)
+        Me.ClientSize = New System.Drawing.Size(781, 513)
         Me.Controls.Add(Me.txtumur)
         Me.Controls.Add(Me.MetroLabel12)
         Me.Controls.Add(Me.Date1)
