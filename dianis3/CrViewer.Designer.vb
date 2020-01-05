@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class CrViewer
+Partial Class CRViewer
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
@@ -36,13 +36,13 @@ Partial Class CrViewer
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(760, 370)
         Me.CrystalReportViewer1.TabIndex = 0
         '
-        'CrViewer
+        'CRViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.CrystalReportViewer1)
-        Me.Name = "CrViewer"
+        Me.Name = "CRViewer"
         Me.Text = "CrViewer"
         Me.ResumeLayout(False)
 

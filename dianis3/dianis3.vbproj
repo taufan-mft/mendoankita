@@ -107,7 +107,9 @@
     <Compile Include="crviewer.Designer.vb">
       <DependentUpon>crviewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="crviewer.vb" />
+    <Compile Include="crviewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CrystalReportAudio.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
