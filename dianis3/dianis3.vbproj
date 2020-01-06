@@ -194,6 +194,12 @@
     <Compile Include="qrcode.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="resetData.Designer.vb">
+      <DependentUpon>resetData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="resetData.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="seat.Designer.vb">
       <DependentUpon>seat.vb</DependentUpon>
     </Compile>
@@ -269,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="qrcode.resx">
       <DependentUpon>qrcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetData.resx">
+      <DependentUpon>resetData.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="seat.resx">
       <DependentUpon>seat.vb</DependentUpon>

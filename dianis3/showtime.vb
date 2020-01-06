@@ -60,7 +60,7 @@
             End While
         End If
         tampilkanData("select ID_showtime, judul_film, nama_audi, jam_tayang from (showtime INNER JOIN film ON showtime.ID_film=film.ID_film) INNER JOIN auditorium ON showtime.ID_auditorium = auditorium.ID_auditorium ", DataGridView1)
-        ''tampilkanData("select * from seat", DataGridView1)
+        'tampilkanData("select * from seat [order by baris ASC, kolom ASC] ", DataGridView1)
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click

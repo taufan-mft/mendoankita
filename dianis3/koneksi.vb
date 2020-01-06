@@ -233,6 +233,14 @@ Module koneksi
         MsgBox("Data terhapus.")
     End Sub
 
+    Sub hapusData(namatabel As String)
+        Dim sql As String
+        sql = "DELETE FROM " + namatabel
+        CMD = New OleDb.OleDbCommand(sql, Conn)
+        DM = CMD.ExecuteReader
+        MsgBox("Data terhapus.")
+    End Sub
+
     'fungsi untuk mencari ID suatu data dari suatu tabel untuk kemudian di masukan (referensikan) di tabel lain
     Function retrieveID(value As String, tabel As String, namakolID As String, namakolValue As String)
         Dim sql As String = "Select " + namakolID + " from " + tabel + " where " + namakolValue + " = '" + value + "'"

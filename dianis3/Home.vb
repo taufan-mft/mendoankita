@@ -66,4 +66,8 @@
     Private Sub TransaksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem.Click
         transaksi.Show()
     End Sub
+
+    Private Sub ClearDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearDataToolStripMenuItem.Click
+        resetData.Show()
+    End Sub
 End Class
