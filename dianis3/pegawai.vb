@@ -36,14 +36,14 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg) = True) Then
-            MsgBox("Jangan kosong ra")
+            MsgBox("Jangan kosong")
         Else
             Dim winny As Boolean = checkDuplicate("pegawai", "ID_pegawai", txtIDPeg.Text)
             If winny = True Then
                 MsgBox("weh duploikat")
             Else
-                txtKelaminPeg.Text = KelaminCombo.SelectedItem.ToString
-                txtJabatanPeg.Text = Combopegawai.SelectedItem.ToString
+                txtKelaminPeg.Text = Cbxkelamin.SelectedItem.ToString
+                txtJabatanPeg.Text = cbxjabatan.SelectedItem.ToString
                 simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg, txtUsername, txtPassword, txtFoto)
                 tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
@@ -51,7 +51,7 @@
     End Sub
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, KelaminCombo, Combopegawai, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, Cbxkelamin, cbxjabatan, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
 
         btnSave.Enabled = False
@@ -61,11 +61,11 @@
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
         If (checkEmpty(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg) = True) Then
-            MsgBox("Jangan kosong ra")
+            MsgBox("Jangan kosong")
         Else
 
             updateData("pegawai", "ID_pegawai", txtIDPeg.Text, "namapegawai", txtNamaPeg.Text, "alamat", txtAlamatPeg.Text, "nomorhp", txtNoHPPeg.Text,
-                       "jeniskelamin", KelaminCombo.SelectedItem.ToString, "jabatan", Combopegawai.SelectedItem.ToString, "foto", txtFoto.Text)
+                       "jeniskelamin", Cbxkelamin.SelectedItem.ToString, "jabatan", cbxjabatan.SelectedItem.ToString, "foto", txtFoto.Text, "tanggal_lahir", Date1.Text)
             tampilkanData("SELECT * FROM pegawai", DataGridView1)
             clearForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
             matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
@@ -133,5 +133,24 @@
         End If
     End Sub
 
+    Private Sub Date1_ValueChanged(sender As Object, e As EventArgs) Handles Date1.ValueChanged
+        Dim umur, bulan, hari, tl, ts As Integer
+        tl = Year(Date1.Value)
+        ts = Year(Now)
+        umur = ts - tl
+        bulan = DateDiff(DateInterval.Month, CDate(Date1.Value), CDate(Now))
+        hari = DateDiff(DateInterval.Day, CDate(Date1.Value), CDate(Now))
+        Select Case bulan
 
+            Case 0 To 6 : txtumur.Text = 1
+            Case 7 To 12 : txtumur.Text = 2
+            Case 13 To 18 : txtumur.Text = 3
+            Case 19 To 24 : txtumur.Text = 4
+            Case 25 To 30 : txtumur.Text = 5
+            Case 31 To 36 : txtumur.Text = 6
+            Case 36 To 42 : txtumur.Text = 7
+
+        End Select
+
+    End Sub
 End Class

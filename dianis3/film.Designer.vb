@@ -45,14 +45,14 @@ Partial Class film
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(313, 63)
+        Me.DataGridView1.Location = New System.Drawing.Point(23, 206)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(471, 266)
+        Me.DataGridView1.Size = New System.Drawing.Size(471, 201)
         Me.DataGridView1.TabIndex = 37
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(259, 364)
+        Me.btnExit.Location = New System.Drawing.Point(419, 160)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 36
@@ -61,7 +61,7 @@ Partial Class film
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(178, 364)
+        Me.btnCancel.Location = New System.Drawing.Point(253, 160)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
         Me.btnCancel.TabIndex = 35
@@ -70,7 +70,7 @@ Partial Class film
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(259, 335)
+        Me.btnDelete.Location = New System.Drawing.Point(334, 160)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 23)
         Me.btnDelete.TabIndex = 34
@@ -79,7 +79,7 @@ Partial Class film
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(178, 335)
+        Me.btnEdit.Location = New System.Drawing.Point(419, 122)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(75, 23)
         Me.btnEdit.TabIndex = 33
@@ -88,7 +88,7 @@ Partial Class film
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(97, 335)
+        Me.btnSave.Location = New System.Drawing.Point(334, 122)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
         Me.btnSave.TabIndex = 32
@@ -97,7 +97,7 @@ Partial Class film
         '
         'btnInput
         '
-        Me.btnInput.Location = New System.Drawing.Point(16, 335)
+        Me.btnInput.Location = New System.Drawing.Point(253, 122)
         Me.btnInput.Name = "btnInput"
         Me.btnInput.Size = New System.Drawing.Size(75, 23)
         Me.btnInput.TabIndex = 31
@@ -264,7 +264,7 @@ Partial Class film
         '
         Me.MetroLabel8.AutoSize = True
         Me.MetroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel8.Location = New System.Drawing.Point(637, 26)
+        Me.MetroLabel8.Location = New System.Drawing.Point(443, 12)
         Me.MetroLabel8.Name = "MetroLabel8"
         Me.MetroLabel8.Size = New System.Drawing.Size(51, 25)
         Me.MetroLabel8.TabIndex = 39
@@ -274,7 +274,7 @@ Partial Class film
         '
         Me.MetroLabel7.AutoSize = True
         Me.MetroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall
-        Me.MetroLabel7.Location = New System.Drawing.Point(592, 26)
+        Me.MetroLabel7.Location = New System.Drawing.Point(398, 12)
         Me.MetroLabel7.Name = "MetroLabel7"
         Me.MetroLabel7.Size = New System.Drawing.Size(51, 25)
         Me.MetroLabel7.TabIndex = 38
@@ -284,7 +284,7 @@ Partial Class film
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(525, 443)
         Me.Controls.Add(Me.MetroLabel8)
         Me.Controls.Add(Me.MetroLabel7)
         Me.Controls.Add(Me.DataGridView1)

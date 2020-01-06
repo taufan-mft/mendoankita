@@ -38,7 +38,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertToolStripMenuItem, Me.TransaksiToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(20, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(801, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(416, 24)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -52,31 +52,31 @@ Partial Class Form1
         'PegawaiToolStripMenuItem
         '
         Me.PegawaiToolStripMenuItem.Name = "PegawaiToolStripMenuItem"
-        Me.PegawaiToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PegawaiToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.PegawaiToolStripMenuItem.Text = "Pegawai"
         '
         'FilmToolStripMenuItem
         '
         Me.FilmToolStripMenuItem.Name = "FilmToolStripMenuItem"
-        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FilmToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.FilmToolStripMenuItem.Text = "Film"
         '
         'ShowtimeToolStripMenuItem
         '
         Me.ShowtimeToolStripMenuItem.Name = "ShowtimeToolStripMenuItem"
-        Me.ShowtimeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ShowtimeToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ShowtimeToolStripMenuItem.Text = "Showtime"
         '
         'FnBToolStripMenuItem
         '
         Me.FnBToolStripMenuItem.Name = "FnBToolStripMenuItem"
-        Me.FnBToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FnBToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.FnBToolStripMenuItem.Text = "FnB"
         '
         'AuditoriumToolStripMenuItem
         '
         Me.AuditoriumToolStripMenuItem.Name = "AuditoriumToolStripMenuItem"
-        Me.AuditoriumToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AuditoriumToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.AuditoriumToolStripMenuItem.Text = "Auditorium"
         '
         'TransaksiToolStripMenuItem
@@ -89,7 +89,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(841, 470)
+        Me.ClientSize = New System.Drawing.Size(456, 279)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"

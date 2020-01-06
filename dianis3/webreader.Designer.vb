@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class webreader
-    Inherits System.Windows.Forms.Form
+    Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -33,7 +33,7 @@ Partial Class webreader
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 35)
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 78)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(175, 174)
         Me.PictureBox1.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class webreader
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(209, 57)
+        Me.Button1.Location = New System.Drawing.Point(220, 100)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -50,7 +50,7 @@ Partial Class webreader
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(209, 96)
+        Me.Button2.Location = New System.Drawing.Point(220, 139)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class webreader
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(209, 140)
+        Me.Button3.Location = New System.Drawing.Point(220, 183)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 3
@@ -68,7 +68,7 @@ Partial Class webreader
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(209, 169)
+        Me.Button4.Location = New System.Drawing.Point(220, 212)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 4
@@ -77,7 +77,7 @@ Partial Class webreader
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(387, 370)
+        Me.TextBox1.Location = New System.Drawing.Point(220, 273)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 5
