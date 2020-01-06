@@ -31,12 +31,13 @@ Partial Class Form1
         Me.AuditoriumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SeatToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.ClearDataToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InsertToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.ClearDataToolStripMenuItem, Me.SeatToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(20, 60)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(416, 24)
@@ -92,6 +93,12 @@ Partial Class Form1
         Me.ClearDataToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ClearDataToolStripMenuItem.Text = "Clear Data"
         '
+        'SeatToolStripMenuItem
+        '
+        Me.SeatToolStripMenuItem.Name = "SeatToolStripMenuItem"
+        Me.SeatToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SeatToolStripMenuItem.Text = "Seat"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -116,4 +123,5 @@ Partial Class Form1
     Friend WithEvents AuditoriumToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TransaksiToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClearDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SeatToolStripMenuItem As ToolStripMenuItem
 End Class

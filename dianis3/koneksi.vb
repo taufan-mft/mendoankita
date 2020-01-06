@@ -120,7 +120,7 @@ Module koneksi
         Next
         CMD = New OleDb.OleDbCommand(sql, Conn)
         CMD.ExecuteNonQuery()
-        MsgBox("BERHAASIL")
+        'MsgBox("BERHAASIL")
         matiForm(var)
         clearForm(var)
 
@@ -138,7 +138,7 @@ Module koneksi
         Next
         CMD = New OleDb.OleDbCommand(sql, Conn)
         CMD.ExecuteNonQuery()
-        MsgBox("BERHAASIL")
+        ' MsgBox("BERHAASIL")
         'matiForm(var)
         'clearForm(var)
 

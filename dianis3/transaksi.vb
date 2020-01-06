@@ -2,9 +2,10 @@
     Dim idFilm As String
     Dim grandtotal As Integer = 0
     Dim banyakBaris As Integer = 0
-    Dim winny As String
+    'Dim winny As String
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
+    Public winny As String
     Private Sub transaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim cek As String = "Select judul_film from film"
@@ -46,8 +47,8 @@
 
     End Sub
     Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox1.SelectedIndexChanged
-        Dim winny As String
 
+        MetroComboBox2.Items.Clear()
         idFilm = MetroComboBox1.SelectedItem.ToString
         txtJudulFilm.Text = idFilm
         idFilm = retrieveID(idFilm, "film", "ID_film", "judul_film")
@@ -163,5 +164,10 @@
             simpanData("tiket", yog.ToString, winny, idSeat, Date.Now.ToString, txtKode.Text)
         Next
 
+    End Sub
+
+    Private Sub MetroButton3_Click(sender As Object, e As EventArgs) Handles MetroButton3.Click
+        Dim kursi As New seat()
+        kursi.Show()
     End Sub
 End Class

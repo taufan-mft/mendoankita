@@ -70,4 +70,8 @@
     Private Sub ClearDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClearDataToolStripMenuItem.Click
         resetData.Show()
     End Sub
+
+    Private Sub SeatToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeatToolStripMenuItem.Click
+        seat.Show()
+    End Sub
 End Class

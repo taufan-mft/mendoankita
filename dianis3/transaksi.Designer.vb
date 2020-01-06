@@ -47,6 +47,7 @@ Partial Class transaksi
         Me.txtIDpeg = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel11 = New MetroFramework.Controls.MetroLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -271,11 +272,21 @@ Partial Class transaksi
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
         '
+        'MetroButton3
+        '
+        Me.MetroButton3.Location = New System.Drawing.Point(428, 158)
+        Me.MetroButton3.Name = "MetroButton3"
+        Me.MetroButton3.Size = New System.Drawing.Size(86, 34)
+        Me.MetroButton3.TabIndex = 22
+        Me.MetroButton3.Text = "Seat"
+        Me.MetroButton3.UseSelectable = True
+        '
         'transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.MetroButton3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtIDpeg)
         Me.Controls.Add(Me.MetroLabel11)
@@ -332,4 +343,5 @@ Partial Class transaksi
     Friend WithEvents txtIDpeg As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel11 As MetroFramework.Controls.MetroLabel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
 End Class
