@@ -105,10 +105,10 @@
     <Compile Include="audi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="crlaporanfnb.Designer.vb">
-      <DependentUpon>crlaporanfnb.vb</DependentUpon>
+    <Compile Include="crviewer.Designer.vb">
+      <DependentUpon>crviewer.vb</DependentUpon>
     </Compile>
-    <Compile Include="crlaporanfnb.vb">
+    <Compile Include="crviewer.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CrystalReportAudio.vb">
@@ -161,30 +161,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="koneksi.vb" />
-    <Compile Include="crlaporanauditorium.Designer.vb">
-      <DependentUpon>crlaporanauditorium.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crlaporanauditorium.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="crlaporanfilm.Designer.vb">
-      <DependentUpon>crlaporanfilm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crlaporanfilm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="crlaporanpegawai.Designer.vb">
-      <DependentUpon>crlaporanpegawai.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crlaporanpegawai.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="crlaporantiket.Designer.vb">
-      <DependentUpon>crlaporantiket.vb</DependentUpon>
-    </Compile>
-    <Compile Include="crlaporantiket.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="login.Designer.vb">
       <DependentUpon>login.vb</DependentUpon>
     </Compile>
@@ -253,8 +229,8 @@
     <EmbeddedResource Include="audi.resx">
       <DependentUpon>audi.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="crlaporanfnb.resx">
-      <DependentUpon>crlaporanfnb.vb</DependentUpon>
+    <EmbeddedResource Include="crviewer.resx">
+      <DependentUpon>crviewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportAudio.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -284,18 +260,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crlaporanauditorium.resx">
-      <DependentUpon>crlaporanauditorium.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crlaporanfilm.resx">
-      <DependentUpon>crlaporanfilm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crlaporanpegawai.resx">
-      <DependentUpon>crlaporanpegawai.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crlaporantiket.resx">
-      <DependentUpon>crlaporantiket.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
