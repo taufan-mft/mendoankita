@@ -218,6 +218,12 @@
     <Compile Include="qrcode.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="seat.Designer.vb">
+      <DependentUpon>seat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="seat.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="showtime.Designer.vb">
       <DependentUpon>showtime.vb</DependentUpon>
     </Compile>
@@ -299,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="qrcode.resx">
       <DependentUpon>qrcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seat.resx">
+      <DependentUpon>seat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="showtime.resx">
       <DependentUpon>showtime.vb</DependentUpon>
