@@ -147,12 +147,6 @@
       <DependentUpon>CrystalReportFilm.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CrystalReportFnb.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportFnb.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CrystalReportPegawai.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -254,10 +248,6 @@
     <EmbeddedResource Include="CrystalReportFilm.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportFilm.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReportFnb.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportFnb.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportPegawai.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
