@@ -117,6 +117,12 @@
     <Compile Include="Cetakfilm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cetaknota.Designer.vb">
+      <DependentUpon>Cetaknota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetaknota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Cetakpegawai.Designer.vb">
       <DependentUpon>Cetakpegawai.vb</DependentUpon>
     </Compile>
@@ -134,6 +140,18 @@
     </Compile>
     <Compile Include="Cetaktransaksi.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReportNota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportNota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportTransaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportTransaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="CrystalReportAudio.vb">
       <AutoGen>True</AutoGen>
@@ -240,6 +258,20 @@
   <ItemGroup>
     <EmbeddedResource Include="audi.resx">
       <DependentUpon>audi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cetaknota.resx">
+      <DependentUpon>Cetaknota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cetaktransaksi.resx">
+      <DependentUpon>Cetaktransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportNota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportNota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportTransaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportTransaksi.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportAudio.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
