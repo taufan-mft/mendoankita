@@ -26,7 +26,7 @@ Button51, Button52, Button53, Button54, Button55, Button56, Button57, Button58, 
         ' Handle your Button clicks here
         Dim saya As String = ""
         Dim selectedBtn As Button = sender
-        MsgBox("you have clicked button " & selectedBtn.Text)
+
         selectedSeats(indexseat) = selectedBtn.Text
         Label3.Text = selectedSeats.ToString
         indexseat = indexseat + 1
@@ -68,7 +68,7 @@ Button51, Button52, Button53, Button54, Button55, Button56, Button57, Button58, 
 
             DM.NextResult()
         End While
-        MsgBox("BERHAASIL")
+        ' MsgBox("BERHAASIL")
         'matiForm(var)
         'clearForm(var)
 

@@ -101,8 +101,7 @@
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-
-        MetroLabel5.Text = retrieveID(MetroComboBox1.SelectedItem.ToString, "film", "ID_film", "judul_film")
+        Me.Close()
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click

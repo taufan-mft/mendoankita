@@ -44,7 +44,7 @@
             Else
                 txtKelaminPeg.Text = Cbxkelamin.SelectedItem.ToString
                 txtJabatanPeg.Text = cbxjabatan.SelectedItem.ToString
-                simpanData("pegawai", txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg, txtUsername, txtPassword, txtFoto)
+                simpanData("pegawai", txtIDPeg.Text, txtNamaPeg.Text, txtAlamatPeg.Text, txtNoHPPeg.Text, txtKelaminPeg.Text, txtJabatanPeg.Text, txtUsername.Text, txtPassword.Text, txtFoto.Text, Date1.ToString)
                 tampilkanData("SELECT * FROM pegawai", DataGridView1)
             End If
         End If
