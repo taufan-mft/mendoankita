@@ -120,4 +120,12 @@
     Private Sub NotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotaToolStripMenuItem.Click
         cetaknota.Show()
     End Sub
+
+    Private Sub TiketToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles TiketToolStripMenuItem1.Click
+        Cetaktiket.Show()
+    End Sub
+
+    Private Sub TransaksiToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem2.Click
+        Periodiktransaksi.Show()
+    End Sub
 End Class

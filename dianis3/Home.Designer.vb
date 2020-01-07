@@ -40,11 +40,11 @@ Partial Class Form1
         Me.LainnyaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WebreaderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QrcodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ParamaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransaksiToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TiketToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -111,31 +111,31 @@ Partial Class Form1
         'PegawaiToolStripMenuItem1
         '
         Me.PegawaiToolStripMenuItem1.Name = "PegawaiToolStripMenuItem1"
-        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.PegawaiToolStripMenuItem1.Text = "Pegawai"
         '
         'TiketToolStripMenuItem
         '
         Me.TiketToolStripMenuItem.Name = "TiketToolStripMenuItem"
-        Me.TiketToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TiketToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.TiketToolStripMenuItem.Text = "Tiket"
         '
         'FilmToolStripMenuItem1
         '
         Me.FilmToolStripMenuItem1.Name = "FilmToolStripMenuItem1"
-        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.FilmToolStripMenuItem1.Text = "Film"
         '
         'AuditoriumToolStripMenuItem1
         '
         Me.AuditoriumToolStripMenuItem1.Name = "AuditoriumToolStripMenuItem1"
-        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.AuditoriumToolStripMenuItem1.Text = "Auditorium"
         '
         'TransaksiToolStripMenuItem1
         '
         Me.TransaksiToolStripMenuItem1.Name = "TransaksiToolStripMenuItem1"
-        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.TransaksiToolStripMenuItem1.Text = "Transaksi"
         '
         'LainnyaToolStripMenuItem
@@ -157,16 +157,6 @@ Partial Class Form1
         Me.QrcodeToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.QrcodeToolStripMenuItem.Text = "Qrcode"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(23, 87)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(716, 314)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 4
-        Me.PictureBox1.TabStop = False
-        '
         'ParamaToolStripMenuItem
         '
         Me.ParamaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TransaksiToolStripMenuItem2, Me.NotaToolStripMenuItem, Me.TiketToolStripMenuItem1})
@@ -178,7 +168,7 @@ Partial Class Form1
         '
         Me.TransaksiToolStripMenuItem2.Name = "TransaksiToolStripMenuItem2"
         Me.TransaksiToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
-        Me.TransaksiToolStripMenuItem2.Text = "Transaksi"
+        Me.TransaksiToolStripMenuItem2.Text = "Periode Transaksi "
         '
         'NotaToolStripMenuItem
         '
@@ -191,6 +181,16 @@ Partial Class Form1
         Me.TiketToolStripMenuItem1.Name = "TiketToolStripMenuItem1"
         Me.TiketToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.TiketToolStripMenuItem1.Text = "Tiket"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(23, 87)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(716, 314)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 4
+        Me.PictureBox1.TabStop = False
         '
         'Form1
         '
