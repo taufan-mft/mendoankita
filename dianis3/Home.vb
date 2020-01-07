@@ -90,7 +90,7 @@
 
     End Sub
 
-    Private Sub ShowtimeToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ShowtimeToolStripMenuItem1.Click
+    Private Sub ShowtimeToolStripMenuItem1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -106,5 +106,10 @@
 
     Private Sub QrcodeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QrcodeToolStripMenuItem.Click
         qrcode.Show()
+    End Sub
+
+    Private Sub TransaksiToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem1.Click
+        Cetaktransaksi.Show()
+
     End Sub
 End Class

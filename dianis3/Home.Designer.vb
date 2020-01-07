@@ -35,12 +35,12 @@ Partial Class Form1
         Me.PegawaiToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TiketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FilmToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ShowtimeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AuditoriumToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.LainnyaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WebreaderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.QrcodeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TransaksiToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -99,7 +99,7 @@ Partial Class Form1
         '
         'LaporanToolStripMenuItem
         '
-        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PegawaiToolStripMenuItem1, Me.TiketToolStripMenuItem, Me.FilmToolStripMenuItem1, Me.ShowtimeToolStripMenuItem1, Me.AuditoriumToolStripMenuItem1})
+        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PegawaiToolStripMenuItem1, Me.TiketToolStripMenuItem, Me.FilmToolStripMenuItem1, Me.AuditoriumToolStripMenuItem1, Me.TransaksiToolStripMenuItem1})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
         Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
@@ -107,31 +107,25 @@ Partial Class Form1
         'PegawaiToolStripMenuItem1
         '
         Me.PegawaiToolStripMenuItem1.Name = "PegawaiToolStripMenuItem1"
-        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PegawaiToolStripMenuItem1.Text = "Pegawai"
         '
         'TiketToolStripMenuItem
         '
         Me.TiketToolStripMenuItem.Name = "TiketToolStripMenuItem"
-        Me.TiketToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.TiketToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.TiketToolStripMenuItem.Text = "Tiket"
         '
         'FilmToolStripMenuItem1
         '
         Me.FilmToolStripMenuItem1.Name = "FilmToolStripMenuItem1"
-        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.FilmToolStripMenuItem1.Text = "Film"
-        '
-        'ShowtimeToolStripMenuItem1
-        '
-        Me.ShowtimeToolStripMenuItem1.Name = "ShowtimeToolStripMenuItem1"
-        Me.ShowtimeToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
-        Me.ShowtimeToolStripMenuItem1.Text = "Showtime"
         '
         'AuditoriumToolStripMenuItem1
         '
         Me.AuditoriumToolStripMenuItem1.Name = "AuditoriumToolStripMenuItem1"
-        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.AuditoriumToolStripMenuItem1.Text = "Auditorium"
         '
         'LainnyaToolStripMenuItem
@@ -162,6 +156,12 @@ Partial Class Form1
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
+        '
+        'TransaksiToolStripMenuItem1
+        '
+        Me.TransaksiToolStripMenuItem1.Name = "TransaksiToolStripMenuItem1"
+        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.TransaksiToolStripMenuItem1.Text = "Transaksi"
         '
         'Form1
         '
@@ -194,8 +194,8 @@ Partial Class Form1
     Friend WithEvents PegawaiToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents TiketToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FilmToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ShowtimeToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents AuditoriumToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents WebreaderToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents QrcodeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransaksiToolStripMenuItem1 As ToolStripMenuItem
 End Class
