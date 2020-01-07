@@ -24,7 +24,6 @@ Partial Class cetaknota
     Private Sub InitializeComponent()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportNota1 = New dianis3.CrystalReportNota()
-        Me.CrystalReportNota2 = New dianis3.CrystalReportNota()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -35,7 +34,7 @@ Partial Class cetaknota
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(20, 60)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.ReportSource = Me.CrystalReportNota2
+        Me.CrystalReportViewer1.ReportSource = Me.CrystalReportNota1
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(760, 370)
         Me.CrystalReportViewer1.TabIndex = 0
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
@@ -54,5 +53,4 @@ Partial Class cetaknota
 
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReportNota1 As CrystalReportNota
-    Friend WithEvents CrystalReportNota2 As CrystalReportNota
 End Class
