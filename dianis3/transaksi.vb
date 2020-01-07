@@ -121,6 +121,18 @@
 
     End Sub
 
+    Public Sub loadGrid()
+        Dim harga As Integer
+
+        For index As Integer = 0 To seat.selectedSeats.Length - 1
+            If (seat.selectedSeats(index) <> Nothing) Then
+                DataGridView1.Rows.Add(New String() {MetroComboBox1.SelectedItem.ToString, MetroComboBox2.SelectedItem.ToString, seat.selectedSeats(index)})
+            End If
+        Next
+        harga = (DataGridView1.Rows.Count) * CInt(MetroLabel6.Text)
+        txtGrandtotal.Text = harga.ToString
+        banyakBaris = DataGridView1.Rows.Count
+    End Sub
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
         DataGridView1.Rows.Add(New String() {MetroComboBox1.SelectedItem.ToString, MetroComboBox2.SelectedItem.ToString, MetroComboBox3.SelectedItem.ToString})
         MetroComboBox3.Items.Remove(MetroComboBox3.SelectedItem)
@@ -128,7 +140,7 @@
         MetroComboBox1.Enabled = False
         MetroComboBox2.Enabled = False
         '' MetroLabel10.Text = DataGridView1.Rows.Count
-        banyakBaris = DataGridView1.Rows.Count
+
         '' MetroLabel10.Text = banyakBaris
         grandtotal = grandtotal + Int(MetroLabel6.Text)
         txtGrandtotal.Text = grandtotal.ToString

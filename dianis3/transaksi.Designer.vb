@@ -37,9 +37,6 @@ Partial Class transaksi
         Me.MetroLabel8 = New MetroFramework.Controls.MetroLabel()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.showtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.seat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtGrandtotal = New MetroFramework.Controls.MetroLabel()
         Me.MetroLabel10 = New MetroFramework.Controls.MetroLabel()
         Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
@@ -48,6 +45,9 @@ Partial Class transaksi
         Me.MetroLabel11 = New MetroFramework.Controls.MetroLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
+        Me.judul = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.showtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.seatas = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -185,29 +185,11 @@ Partial Class transaksi
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.judul, Me.showtime, Me.seat})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.judul, Me.showtime, Me.seatas})
         Me.DataGridView1.Location = New System.Drawing.Point(10, 219)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(767, 208)
         Me.DataGridView1.TabIndex = 14
-        '
-        'judul
-        '
-        Me.judul.HeaderText = "Judul Film"
-        Me.judul.Name = "judul"
-        Me.judul.ReadOnly = True
-        '
-        'showtime
-        '
-        Me.showtime.HeaderText = "Showtime"
-        Me.showtime.Name = "showtime"
-        Me.showtime.ReadOnly = True
-        '
-        'seat
-        '
-        Me.seat.HeaderText = "seat"
-        Me.seat.Name = "seat"
-        Me.seat.ReadOnly = True
         '
         'txtGrandtotal
         '
@@ -281,6 +263,24 @@ Partial Class transaksi
         Me.MetroButton3.Text = "Seat"
         Me.MetroButton3.UseSelectable = True
         '
+        'judul
+        '
+        Me.judul.HeaderText = "Judul Film"
+        Me.judul.Name = "judul"
+        Me.judul.ReadOnly = True
+        '
+        'showtime
+        '
+        Me.showtime.HeaderText = "Showtime"
+        Me.showtime.Name = "showtime"
+        Me.showtime.ReadOnly = True
+        '
+        'seatas
+        '
+        Me.seatas.HeaderText = "seat"
+        Me.seatas.Name = "seatas"
+        Me.seatas.ReadOnly = True
+        '
         'transaksi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -333,9 +333,6 @@ Partial Class transaksi
     Friend WithEvents MetroLabel8 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents judul As DataGridViewTextBoxColumn
-    Friend WithEvents showtime As DataGridViewTextBoxColumn
-    Friend WithEvents seat As DataGridViewTextBoxColumn
     Friend WithEvents txtGrandtotal As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroLabel10 As MetroFramework.Controls.MetroLabel
     Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
@@ -344,4 +341,7 @@ Partial Class transaksi
     Friend WithEvents MetroLabel11 As MetroFramework.Controls.MetroLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents MetroButton3 As MetroFramework.Controls.MetroButton
+    Friend WithEvents judul As DataGridViewTextBoxColumn
+    Friend WithEvents showtime As DataGridViewTextBoxColumn
+    Friend WithEvents seatas As DataGridViewTextBoxColumn
 End Class

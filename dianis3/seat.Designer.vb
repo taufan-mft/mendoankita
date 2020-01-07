@@ -83,6 +83,10 @@ Partial Class seat
         Me.Button58 = New System.Windows.Forms.Button()
         Me.Button59 = New System.Windows.Forms.Button()
         Me.Button60 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button61 = New System.Windows.Forms.Button()
+        Me.Button62 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -695,11 +699,55 @@ Partial Class seat
         Me.Button60.Text = "C20"
         Me.Button60.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(41, 314)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(149, 30)
+        Me.Label2.TabIndex = 61
+        Me.Label2.Text = "Selected seats:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(196, 314)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(36, 30)
+        Me.Label3.TabIndex = 62
+        Me.Label3.Text = "rai"
+        '
+        'Button61
+        '
+        Me.Button61.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Button61.Location = New System.Drawing.Point(215, 393)
+        Me.Button61.Name = "Button61"
+        Me.Button61.Size = New System.Drawing.Size(42, 26)
+        Me.Button61.TabIndex = 63
+        Me.Button61.Text = "Clear"
+        Me.Button61.UseVisualStyleBackColor = True
+        '
+        'Button62
+        '
+        Me.Button62.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Button62.Location = New System.Drawing.Point(270, 393)
+        Me.Button62.Name = "Button62"
+        Me.Button62.Size = New System.Drawing.Size(42, 26)
+        Me.Button62.TabIndex = 64
+        Me.Button62.Text = "OK"
+        Me.Button62.UseVisualStyleBackColor = True
+        '
         'seat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1068, 442)
+        Me.Controls.Add(Me.Button62)
+        Me.Controls.Add(Me.Button61)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button41)
         Me.Controls.Add(Me.Button42)
         Me.Controls.Add(Me.Button43)
@@ -829,4 +877,8 @@ Partial Class seat
     Friend WithEvents Button58 As Button
     Friend WithEvents Button59 As Button
     Friend WithEvents Button60 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button61 As Button
+    Friend WithEvents Button62 As Button
 End Class

@@ -57,11 +57,18 @@ Module koneksi
         Next
     End Sub
 
+    Sub enableButton(ParamArray winny() As Button)
+        For i As Integer = 0 To UBound(winny, 1)
+            winny(i).Enabled = True
+        Next
+    End Sub
+
     Sub disableButton(ParamArray winny() As MetroButton)
         For i As Integer = 0 To UBound(winny, 1)
             winny(i).Enabled = False
         Next
     End Sub
+
 
     'fungsi untuk menampilkan data, kita cukup masukan query SQL serta DataGridView yang dituju sebagai argumen.
 
