@@ -52,7 +52,7 @@
 
     End Sub
 
-    Private Sub FnBToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FnBToolStripMenuItem.Click
+    Private Sub FnBToolStripMenuItem_Click(sender As Object, e As EventArgs)
         foodAndBeverages.Show()
 
 
@@ -73,5 +73,38 @@
 
     Private Sub SeatToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeatToolStripMenuItem.Click
         seat.Show()
+    End Sub
+
+    Private Sub PegawaiToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PegawaiToolStripMenuItem1.Click
+        Cetakpegawai.Show()
+
+    End Sub
+
+    Private Sub TiketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TiketToolStripMenuItem.Click
+        Cetaktiket.Show()
+
+    End Sub
+
+    Private Sub FilmToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FilmToolStripMenuItem1.Click
+        Cetakfilm.Show()
+
+    End Sub
+
+    Private Sub ShowtimeToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ShowtimeToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub AuditoriumToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles AuditoriumToolStripMenuItem1.Click
+        Cetakaudito.Show()
+
+    End Sub
+
+    Private Sub WebreaderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WebreaderToolStripMenuItem.Click
+        webreader.Show()
+
+    End Sub
+
+    Private Sub QrcodeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles QrcodeToolStripMenuItem.Click
+        qrcode.Show()
     End Sub
 End Class

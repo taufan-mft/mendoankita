@@ -105,10 +105,34 @@
     <Compile Include="audi.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="crviewer.Designer.vb">
-      <DependentUpon>crviewer.vb</DependentUpon>
+    <Compile Include="Cetakaudito.Designer.vb">
+      <DependentUpon>Cetakaudito.vb</DependentUpon>
     </Compile>
-    <Compile Include="crviewer.vb">
+    <Compile Include="Cetakaudito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cetakfilm.Designer.vb">
+      <DependentUpon>Cetakfilm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetakfilm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cetakpegawai.Designer.vb">
+      <DependentUpon>Cetakpegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetakpegawai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cetaktiket.Designer.vb">
+      <DependentUpon>Cetaktiket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetaktiket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cetaktransaksi.Designer.vb">
+      <DependentUpon>Cetaktransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cetaktransaksi.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CrystalReportAudio.vb">
@@ -228,9 +252,6 @@
   <ItemGroup>
     <EmbeddedResource Include="audi.resx">
       <DependentUpon>audi.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="crviewer.resx">
-      <DependentUpon>crviewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportAudio.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
