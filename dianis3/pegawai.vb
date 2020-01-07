@@ -151,6 +151,10 @@
             Case 36 To 42 : txtumur.Text = 7
 
         End Select
+        txtumur.Text = umur.ToString
+    End Sub
+
+    Private Sub txtumur_Click(sender As Object, e As EventArgs) Handles txtumur.Click
 
     End Sub
 End Class
