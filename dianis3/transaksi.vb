@@ -88,7 +88,7 @@
 
                 'MsgBox(DM.GetString(0))
                 ''Label3.Text = DM.GetString(0)
-                MetroComboBox3.Items.Add(DM.GetString(0) + DM.GetString(1))
+                'MetroComboBox3.Items.Add(DM.GetString(0) + DM.GetString(1))
 
             End While
         End If
@@ -133,18 +133,7 @@
         txtGrandtotal.Text = harga.ToString
         banyakBaris = DataGridView1.Rows.Count
     End Sub
-    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
-        DataGridView1.Rows.Add(New String() {MetroComboBox1.SelectedItem.ToString, MetroComboBox2.SelectedItem.ToString, MetroComboBox3.SelectedItem.ToString})
-        MetroComboBox3.Items.Remove(MetroComboBox3.SelectedItem)
-        MetroComboBox3.Update()
-        MetroComboBox1.Enabled = False
-        MetroComboBox2.Enabled = False
-        '' MetroLabel10.Text = DataGridView1.Rows.Count
 
-        '' MetroLabel10.Text = banyakBaris
-        grandtotal = grandtotal + Int(MetroLabel6.Text)
-        txtGrandtotal.Text = grandtotal.ToString
-    End Sub
 
     Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
         Dim baris As String

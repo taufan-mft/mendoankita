@@ -14,8 +14,8 @@
     End Sub
 
     Private Sub btnFnb_Click(sender As Object, e As EventArgs)
-        Dim dian As New foodAndBeverages()
-        dian.Show()
+        'Dim dian As New foodAndBeverages()
+        'dian.Show()
     End Sub
 
     Private Sub btnShowTIme_Click(sender As Object, e As EventArgs)
@@ -53,7 +53,7 @@
     End Sub
 
     Private Sub FnBToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        foodAndBeverages.Show()
+        'foodAndBeverages.Show()
 
 
     End Sub
@@ -71,7 +71,7 @@
         resetData.Show()
     End Sub
 
-    Private Sub SeatToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeatToolStripMenuItem.Click
+    Private Sub SeatToolStripMenuItem_Click(sender As Object, e As EventArgs)
         seat.Show()
     End Sub
 
