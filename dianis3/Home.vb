@@ -112,4 +112,12 @@
         Cetaktransaksi.Show()
 
     End Sub
+
+    Private Sub ParamaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ParamaToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub NotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotaToolStripMenuItem.Click
+        cetaknota.Show()
+    End Sub
 End Class
