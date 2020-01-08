@@ -147,6 +147,12 @@
       <DependentUpon>CrystalReportNota.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReportperiodetransaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportperiodetransaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CrystalReportTransaksi.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +224,12 @@
     <Compile Include="pegawai.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="peridoiktrx.Designer.vb">
+      <DependentUpon>peridoiktrx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="peridoiktrx.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="qrcode.Designer.vb">
       <DependentUpon>qrcode.vb</DependentUpon>
     </Compile>
@@ -269,6 +281,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportNota.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportperiodetransaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportperiodetransaksi.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrystalReportTransaksi.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportTransaksi.vb</LastGenOutput>
@@ -306,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pegawai.resx">
       <DependentUpon>pegawai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peridoiktrx.resx">
+      <DependentUpon>peridoiktrx.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="qrcode.resx">
       <DependentUpon>qrcode.vb</DependentUpon>

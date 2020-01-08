@@ -80,7 +80,7 @@
 
     End Sub
 
-    Private Sub TiketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TiketToolStripMenuItem.Click
+    Private Sub TiketToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Cetaktiket.Show()
 
     End Sub
@@ -126,6 +126,7 @@
     End Sub
 
     Private Sub TransaksiToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles TransaksiToolStripMenuItem2.Click
-        Periodiktransaksi.Show()
+        peridoiktrx.Show()
     End Sub
+
 End Class
