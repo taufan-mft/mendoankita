@@ -11,7 +11,7 @@
 
         Dim cek As String = "Select judul_film from film"
         CMD = New OleDb.OleDbCommand(cek, Conn)
-        txtKode.Text = GetRandom(1, 25000).ToString
+        txtKode.Text = GetRandom(1000, 25000).ToString
         txtIDpeg.Text = login.id
         DM = CMD.ExecuteReader()
 
@@ -141,7 +141,7 @@
         Dim baris As String
         Dim kolom As String
         Dim idSeat As String
-        raisanidianis = "C:\Users\Taufan\Documents\mendoankita\dianis3\bin\Debug\"
+        raisanidianis = "C:\Users\hp\Documents\mendoankita\mendoankita\dianis3\bin\Debug"
         raisanidianis = raisanidianis + txtKode.Text + ".jpg"
         PictureBox1.Image.Save(raisanidianis)
         simpanData("transaksi", txtKode.Text, txtIDpeg.Text, winny, banyakBaris.ToString, Date.Now.ToString, txtGrandtotal.Text, raisanidianis)
@@ -170,6 +170,8 @@
             simpanData("tiket", yog.ToString, winny, idSeat, Date.Now.ToString, txtKode.Text)
         Next
 
+        Cetaktiket.CrystalReportTiket1.SetParameterValue("Idtrx", txtKode.Text)
+        Cetaktiket.Show()
     End Sub
 
     Private Sub MetroButton3_Click(sender As Object, e As EventArgs) Handles MetroButton3.Click

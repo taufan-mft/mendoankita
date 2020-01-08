@@ -274,6 +274,9 @@
     <EmbeddedResource Include="Cetaknota.resx">
       <DependentUpon>Cetaknota.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cetaktiket.resx">
+      <DependentUpon>Cetaktiket.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cetaktransaksi.resx">
       <DependentUpon>Cetaktransaksi.vb</DependentUpon>
     </EmbeddedResource>

@@ -24,6 +24,7 @@ Partial Class Cetaktiket
     Private Sub InitializeComponent()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportTiket1 = New dianis3.CrystalReportTiket()
+        Me.btncetaknota = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CrystalReportViewer1
@@ -35,15 +36,25 @@ Partial Class Cetaktiket
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(20, 60)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.CrystalReportTiket1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(760, 370)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(760, 397)
         Me.CrystalReportViewer1.TabIndex = 0
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        '
+        'btncetaknota
+        '
+        Me.btncetaknota.Location = New System.Drawing.Point(332, 21)
+        Me.btncetaknota.Name = "btncetaknota"
+        Me.btncetaknota.Size = New System.Drawing.Size(109, 33)
+        Me.btncetaknota.TabIndex = 1
+        Me.btncetaknota.Text = "Cetak Nota"
+        Me.btncetaknota.UseVisualStyleBackColor = True
         '
         'Cetaktiket
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 477)
+        Me.Controls.Add(Me.btncetaknota)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "Cetaktiket"
         Me.Text = "Cetaktiket"
@@ -53,4 +64,5 @@ Partial Class Cetaktiket
 
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReportTiket1 As CrystalReportTiket
+    Friend WithEvents btncetaknota As Button
 End Class
