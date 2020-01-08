@@ -5,7 +5,7 @@ Imports MessagingToolkit.QRCode.Codec
 Public Class qrcode
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
-
+    Dim raisanidianis As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             PictureBox1.Image = QR_Generator.Encode(TextBox1.Text)
@@ -35,6 +35,7 @@ Public Class qrcode
         If SD.ShowDialog() = Windows.Forms.DialogResult.OK Then
             Try
                 PictureBox2.Image.Save(SD.FileName, Imaging.ImageFormat.Png)
+
             Catch ex As Exception
                 MsgBox(ex.Message)
             End Try
@@ -80,5 +81,9 @@ Public Class qrcode
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub qrcode_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
