@@ -27,7 +27,7 @@
 
 
 
-            Dim box2 As New Form1()
+            Dim box2 As New Home()
             box2.Show()
 
 

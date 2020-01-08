@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Home
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PegawaiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -110,25 +110,25 @@ Partial Class Form1
         'PegawaiToolStripMenuItem1
         '
         Me.PegawaiToolStripMenuItem1.Name = "PegawaiToolStripMenuItem1"
-        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PegawaiToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.PegawaiToolStripMenuItem1.Text = "Pegawai"
         '
         'FilmToolStripMenuItem1
         '
         Me.FilmToolStripMenuItem1.Name = "FilmToolStripMenuItem1"
-        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.FilmToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.FilmToolStripMenuItem1.Text = "Film"
         '
         'AuditoriumToolStripMenuItem1
         '
         Me.AuditoriumToolStripMenuItem1.Name = "AuditoriumToolStripMenuItem1"
-        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AuditoriumToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.AuditoriumToolStripMenuItem1.Text = "Auditorium"
         '
         'TransaksiToolStripMenuItem1
         '
         Me.TransaksiToolStripMenuItem1.Name = "TransaksiToolStripMenuItem1"
-        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.TransaksiToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.TransaksiToolStripMenuItem1.Text = "Transaksi"
         '
         'LainnyaToolStripMenuItem
@@ -141,13 +141,13 @@ Partial Class Form1
         'WebreaderToolStripMenuItem
         '
         Me.WebreaderToolStripMenuItem.Name = "WebreaderToolStripMenuItem"
-        Me.WebreaderToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.WebreaderToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.WebreaderToolStripMenuItem.Text = "Webreader"
         '
         'QrcodeToolStripMenuItem
         '
         Me.QrcodeToolStripMenuItem.Name = "QrcodeToolStripMenuItem"
-        Me.QrcodeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QrcodeToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.QrcodeToolStripMenuItem.Text = "Qrcode"
         '
         'ParamaToolStripMenuItem
@@ -160,19 +160,19 @@ Partial Class Form1
         'TransaksiToolStripMenuItem2
         '
         Me.TransaksiToolStripMenuItem2.Name = "TransaksiToolStripMenuItem2"
-        Me.TransaksiToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.TransaksiToolStripMenuItem2.Size = New System.Drawing.Size(167, 22)
         Me.TransaksiToolStripMenuItem2.Text = "Periode Transaksi "
         '
         'NotaToolStripMenuItem
         '
         Me.NotaToolStripMenuItem.Name = "NotaToolStripMenuItem"
-        Me.NotaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NotaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
         Me.NotaToolStripMenuItem.Text = "Nota"
         '
         'TiketToolStripMenuItem1
         '
         Me.TiketToolStripMenuItem1.Name = "TiketToolStripMenuItem1"
-        Me.TiketToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.TiketToolStripMenuItem1.Size = New System.Drawing.Size(167, 22)
         Me.TiketToolStripMenuItem1.Text = "Tiket"
         '
         'PictureBox1
@@ -185,7 +185,7 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'Form1
+        'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -193,7 +193,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
+        Me.Name = "Home"
         Me.Text = "Home"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
