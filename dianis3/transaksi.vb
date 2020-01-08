@@ -26,7 +26,8 @@
             End While
         End If
         Try
-            PictureBox1.Image = QR_Generator.Encode(txtKode.Text)
+            'PictureBox1.Image = QR_Generator.Encode(txtKode.Text)
+            PictureBox1.Image = BR_Generator.Encode(MessagingToolkit.Barcode.BarcodeFormat.Code128, txtKode.Text)
 
         Catch ex As Exception
             MsgBox(ex.Message)
