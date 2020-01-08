@@ -120,9 +120,7 @@
     <Compile Include="Cetaknota.Designer.vb">
       <DependentUpon>Cetaknota.vb</DependentUpon>
     </Compile>
-    <Compile Include="Cetaknota.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Cetaknota.vb" />
     <Compile Include="Cetakpegawai.Designer.vb">
       <DependentUpon>Cetakpegawai.vb</DependentUpon>
     </Compile>
