@@ -8,11 +8,11 @@
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtNamaPeg, txtNoHPPeg)
         tampilkanData("SELECT * FROM pegawai", DataGridView1)
         If (login.id <> "") Then
-            Dim nomer As Integer
-            nomer = Integer.Parse(login.id) - 1
-            showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
-            MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
-            winnyName = MetroLabel8.Text
+            ' Dim nomer As Integer
+            'nomer = Integer.Parse(login.id) - 1
+            'showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+            'MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
+            winnyName = login.id
         End If
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
     End Sub

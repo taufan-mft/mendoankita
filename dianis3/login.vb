@@ -20,7 +20,7 @@
             While DM.Read
 
                 'MsgBox(DM.GetString(0))
-                Label3.Text = DM.GetString(0)
+                Label3.Text = DM.GetString(1)
             End While
 
             id = Label3.Text
