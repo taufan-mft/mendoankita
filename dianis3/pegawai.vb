@@ -13,7 +13,10 @@
             'showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
             'MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
             winnyName = login.id
+            MetroLabel8.Text = winnyName
         End If
+        txtKelaminPeg.Hide()
+        txtJabatanPeg.Hide()
         matiForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
     End Sub
 
@@ -51,7 +54,7 @@
     End Sub
 
     Private Sub DGV_MouseClick(sender As Object, e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        showtoBox(e.RowIndex, DataGridView1, PictureBox1, MetroLabel6, txtFoto, Cbxkelamin, cbxjabatan, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
+        showtoBox(e.RowIndex, Date1, DataGridView1, PictureBox1, MetroLabel6, txtFoto, Cbxkelamin, cbxjabatan, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
         nyalainForm(txtAlamatPeg, txtIDPeg, txtJabatanPeg, txtKelaminPeg, txtNamaPeg, txtNoHPPeg)
 
         btnSave.Enabled = False

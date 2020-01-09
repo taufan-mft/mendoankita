@@ -180,6 +180,7 @@ Module koneksi
                 Dim direck As String = DGV.Rows(row).Cells(i + 3).Value
                 var(i).Text = DGV.Rows(row).Cells(i).Value
                 'debug.Text = direck
+                'amanda.Value = DGV.Rows(row).Cells(9).Value
                 pb.Image = New Bitmap(direck)
                 login.username = DGV.Rows(row).Cells(6).Value
                 login.password = DGV.Rows(row).Cells(7).Value
@@ -191,7 +192,7 @@ Module koneksi
     End Sub
 
     'fungsi untuk menampilkan disertai combobox di pegawai
-    Sub showtoBox(row As Integer, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, txtKelamin As MetroComboBox, txtJabatanlagi As MetroComboBox, ParamArray var() As MetroTextBox)
+    Sub showtoBox(row As Integer, amanda As DateTimePicker, DGV As DataGridView, pb As PictureBox, debug As MetroLabel, txtFoto As MetroTextBox, txtKelamin As MetroComboBox, txtJabatanlagi As MetroComboBox, ParamArray var() As MetroTextBox)
         On Error Resume Next
         For i As Integer = 0 To UBound(var, 1)
 
@@ -199,6 +200,7 @@ Module koneksi
                 Dim direck As String = DGV.Rows(row).Cells(i + 3).Value
                 var(i).Text = DGV.Rows(row).Cells(i).Value
                 'debug.Text = direck
+                amanda.Value = DGV.Rows(row).Cells(9).Value
                 pb.Image = New Bitmap(direck)
                 login.username = DGV.Rows(row).Cells(6).Value
                 login.password = DGV.Rows(row).Cells(7).Value
@@ -231,7 +233,7 @@ Module koneksi
         Return Generator.Next(Min, Max).ToString
     End Function
 
-    'fungsi untuk hapus data, berdasarkan ID
+    'fungsi untuk h apus data, berdasarkan ID
     Sub hapusData(namatabel As String, namaid As String, id As String)
         Dim sql As String
         sql = "DELETE FROM " + namatabel + " WHERE " + namaid + " ='" + id + "'"
