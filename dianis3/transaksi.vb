@@ -6,7 +6,7 @@
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
     Public winny As String
-    Dim raisanidianis As String
+    Dim kikyy As String
     Private Sub transaksi_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim cek As String = "Select judul_film from film"
@@ -141,10 +141,10 @@
         Dim baris As String
         Dim kolom As String
         Dim idSeat As String
-        raisanidianis = "C:\Users\hp\Documents\mendoankita\mendoankita\dianis3\bin\Debug"
-        raisanidianis = raisanidianis + txtKode.Text + ".jpg"
-        PictureBox1.Image.Save(raisanidianis)
-        simpanData("transaksi", txtKode.Text, txtIDpeg.Text, winny, banyakBaris.ToString, Date.Now.ToString, txtGrandtotal.Text, raisanidianis)
+        kikyy = "C:\Users\hp\Documents\mendoankita\mendoankita\dianis3\bin\Debug"
+        kikyy = kikyy + txtKode.Text + ".jpg"
+        PictureBox1.Image.Save(kikyy)
+        simpanData("transaksi", txtKode.Text, txtIDpeg.Text, winny, banyakBaris.ToString, Date.Now.ToString, txtGrandtotal.Text, kikyy)
         For index2 As Integer = 0 To banyakBaris - 1
             baris = DataGridView1.Rows(index2).Cells(2).Value
             baris = baris.Substring(0, 1)

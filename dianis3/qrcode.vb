@@ -5,7 +5,7 @@ Imports MessagingToolkit.QRCode.Codec
 Public Class qrcode
     Dim QR_Generator As New MessagingToolkit.QRCode.Codec.QRCodeEncoder
     Dim BR_Generator As New MessagingToolkit.Barcode.BarcodeEncoder
-    Dim raisanidianis As String
+    Dim kikyy As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
             PictureBox1.Image = QR_Generator.Encode(TextBox1.Text)

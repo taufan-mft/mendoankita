@@ -33,7 +33,7 @@
         If (checkEmpty(txtIDAudi, txtNamaAudi, txtKelasAudi, txtJenisFnb) = True) Then
             MsgBox("Jangan kosong rai.")
         Else
-            'TODO NEED ATTTENTION HERE
+
             updateData("auditorium", "ID_auditorium", txtIDAudi.Text, "nama_audi", txtNamaAudi.Text, "kelas_audi", txtKelasAudi.Text, "harga_kursi", txtJenisFnb.Text)
             tampilkanData("SELECT * FROM auditorium", DataGridView1)
             clearForm(txtIDAudi, txtNamaAudi, txtKelasAudi, txtJenisFnb)

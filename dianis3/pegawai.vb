@@ -1,6 +1,6 @@
 ﻿Public Class pegawai
     Dim OpenFileDialog1 As New OpenFileDialog
-    Public Shared winnyName As String
+    Public Shared cacaName As String
     Dim statusCari As Boolean = True
     Private Sub pegawai_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'koneksiDB()
@@ -12,8 +12,8 @@
             'nomer = Integer.Parse(login.id) - 1
             'showtoBox(nomer, DataGridView1, PictureBox1, MetroLabel6, txtFoto, txtIDPeg, txtNamaPeg, txtAlamatPeg, txtNoHPPeg, txtKelaminPeg, txtJabatanPeg)
             'MetroLabel8.Text = DataGridView1.Rows(nomer).Cells(1).Value
-            winnyName = login.id
-            MetroLabel8.Text = winnyName
+            cacaName = login.id
+            MetroLabel8.Text = cacaName
         End If
         txtKelaminPeg.Hide()
         txtJabatanPeg.Hide()

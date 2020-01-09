@@ -9,7 +9,7 @@ Public Class seat
             If TypeOf ctrl Is Button Then
                 btn = DirectCast(ctrl, Button)
                 If (btn.Name <> "Button61") And (btn.Name <> "Button62") Then
-                    AddHandler btn.Click, AddressOf Me.Button_Click   ' From answer by Reed.
+                    AddHandler btn.Click, AddressOf Me.Button_Click
                 End If
             End If
         Next
@@ -23,10 +23,8 @@ Button51, Button52, Button53, Button54, Button55, Button56, Button57, Button58, 
     End Sub
 
     Private Sub Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        ' Handle your Button clicks here
         Dim saya As String = ""
         Dim selectedBtn As Button = sender
-
         selectedSeats(indexseat) = selectedBtn.Text
         Label3.Text = selectedSeats.ToString
         indexseat = indexseat + 1
@@ -42,18 +40,8 @@ Button51, Button52, Button53, Button54, Button55, Button56, Button57, Button58, 
 
     Sub loadSeat(id As String, ParamArray var() As Button)
         Dim Index As Integer = 0
-        ' Dim raisa As String = "select kolom from seat where ID_showtime = '1' order by baris ASC, IIf ([kolom] = '1', 1, IIf ([kolom] = '2', 2, IIf ([kolom] = '3', 3, IIf ([kolom] = '4', 4, IIf ([kolom] = '5', 5, IIf ([kolom] = '6', 6, IIf ([kolom] = '7', 7, IIf ([kolom] = '8', 8, IIf ([kolom] = '9, 9, IIf ([kolom] = '10', 10, IIf ([kolom] = '11', 11, IIf ([kolom] = '12', 12, IIf ([kolom] = '13', 13, IIf ([kolom] = '14', 14, IIf ([kolom] = '15', 15, IIf ([kolom] = '16', 16, IIf ([kolom] = '17', 17, IIf ([kolom] = '18', 18, IIf ([kolom] = '19', 19, IIf ([kolom] = '20', 20, 21 ))))))))))))))))))))"
-        Dim raisa As String = "select is_occupied from seat where ID_showtime = '" + id + "' order by baris ASC, CInt(kolom) ASC"
-        Dim sql As String = "insert into " + " values("
-        ' For i As Integer = 0 To UBound(var, 1)
-        'If i <> UBound(var, 1) Then
-        ' sql = sql + "'" + var(i).Text + "',"
-        '    Else
-        'sql = sql + "'" + var(i).Text + "')"
-        ' End If
-
-        ' Next
-        CMD = New OleDb.OleDbCommand(raisa, Conn)
+        Dim lily As String = "select is_occupied from seat where ID_showtime = '" + id + "' order by baris ASC, CInt(kolom) ASC"
+        CMD = New OleDb.OleDbCommand(lily, Conn)
         DM = CMD.ExecuteReader()
         While DM.HasRows
             While DM.Read

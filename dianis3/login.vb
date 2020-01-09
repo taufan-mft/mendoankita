@@ -1,8 +1,5 @@
 ﻿Public Class login
     Public Shared username, password, id As String
-
-    Dim winny As String
-
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
 
         Dim cek As String = "Select * From pegawai Where us= '" & txtUserName.Text & "' and pa = '" & txtPassword.Text & "'"
